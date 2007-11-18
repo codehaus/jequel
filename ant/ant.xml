@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="jequel_ant" default="createEnhancedJetstoreHsql">
+
+    <property name="lib" value="${basedir}/../lib"/>
+    <property name="dist" value="${basedir}/../dist"/>
+    <property name="classes" value="${basedir}/../classes"/>
+
+    <property name="resourcebundles" value="${basedir}/data"/>
+
+    <path id="jequel.ant.classpath">
+        <pathelement location="${lib}/schemacrawler-5.3.jar"/>
+        <pathelement location="${lib}/hsqldb.jar"/>
+        <pathelement location="${lib}/commons-logging.jar"/>
+        <pathelement location="${lib}/spring-beans.jar"/>
+        <pathelement location="${lib}/spring-jdbc.jar"/>
+        <pathelement location="${lib}/spring-core.jar"/>
+        <pathelement location="${lib}/spring-tx.jar"/>
+        <pathelement location="${lib}/junit.jar"/>
+
+        <pathelement location="${dist}/jequel.jar"/>
+        <pathelement location="${dist}/ant-jequel.jar"/>
+        <pathelement location="${resourcebundles}"/>
+    </path>
+
+    <path id="jequel.ant.classpath.test">
+        <pathelement location="${lib}/schemacrawler-5.3.jar"/>
+        <pathelement location="${lib}/hsqldb.jar"/>
+        <pathelement location="${lib}/commons-logging.jar"/>
+        <pathelement location="${lib}/spring-beans.jar"/>
+        <pathelement location="${lib}/spring-jdbc.jar"/>
+        <pathelement location="${lib}/spring-core.jar"/>
+        <pathelement location="${lib}/spring-tx.jar"/>
+        <pathelement location="${lib}/junit.jar"/>
+
+        <pathelement location="${classes}/jequel"/>
+        <pathelement location="${classes}/ant"/>
+        <pathelement location="${resourcebundles}"/>
+    </path>
+
+    <taskdef name="jequel" classname="org.apache.tools.ant.taskdefs.optional.jequel.JequelGeneratorTask"
+             classpathref="jequel.ant.classpath.test"/>
+
+    <target name="createEnhancedJetstoreHsql" description="Load Metadata from HSQL Source">
+        <jequel driver="org.hsqldb.jdbcDriver" url="jdbc:hsqldb:data/test" userid="sa" password="">
+            <sql src="data/jpetstore.sql"/>
+            <crawlerload/>
+            <resourcebundlecomments locale="en" resourcebundlebasename="ResourceBundle"/>
+            <!--relationships primaryKeyPattern="^.+ID$"/-->
+            <generate basepath="data" javapackage="de.jexp.jequel.ant.tables" javaclassname="JPetstore"/>
+        </jequel>
+    </target>
+
+    <target name="createEnhancedJetstoreHsqlTesting" description="Load Metadata from HSQL Source">
+        <jequel driver="org.hsqldb.jdbcDriver" url="jdbc:hsqldb:data/test" userid="sa" password="">
+            <sql src="data/jpetstore.sql"/>
+            <crawlerload/>
+            <generate basepath="data" javapackage="de.jexp.jequel.ant.tables" javaclassname="JPetstore"/>
+        </jequel>
+    </target>
+</project>

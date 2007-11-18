@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="jequel_ant" default="createEnhancedJPetstoreHsql">
+
+    <property name="lib" value="${basedir}/../lib"/>
+    <property name="dist" value="${basedir}/../dist"/>
+
+    <path id="jequel.ant.classpath">
+        <pathelement location="${lib}/hsqldb.jar"/>
+        <pathelement location="${lib}/commons-logging.jar"/>
+        <pathelement location="${lib}/spring-beans.jar"/>
+        <pathelement location="${lib}/spring-jdbc.jar"/>
+        <pathelement location="${lib}/spring-core.jar"/>
+        <pathelement location="${lib}/spring-tx.jar"/>
+        <pathelement location="${lib}/junit.jar"/>
+        <pathelement location="${lib}/schemacrawler-5.3.jar"/>
+        <pathelement location="${dist}/jequel.jar"/>
+        <pathelement location="${dist}/ant-jequel.jar"/>
+    </path>
+
+    <taskdef name="jequel" classname="org.apache.tools.ant.taskdefs.optional.jequel.JequelGeneratorTask"
+             classpathref="jequel.ant.classpath"/>
+
+    <target name="createEnhancedJPetstoreHsql" description="Generate Metadata from JPetStore-HSQL Source">
+        <jequel driver="org.hsqldb.jdbcDriver" url="jdbc:hsqldb:data/test" userid="sa" password="">
+            <sql src="data/jpetstore.sql"/>
+            <crawlerload foreignKeys="true"/>
+            <generate basepath="schema" javapackage="com.ibatis.jpetstore.persistence" javaclassname="JPetstore"/>
+        </jequel>
+    </target>
+</project>
