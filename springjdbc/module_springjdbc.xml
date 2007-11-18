@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="module_springjdbc" default="compile.module.springjdbc">
+    <dirname property="module.springjdbc.basedir" file="${ant.file.module_springjdbc}"/>
+
+    <property name="springjdbc.src.dir" value="${module.springjdbc.basedir}/springjdbc/src"/>
+    <property name="springjdbc.doc.api.dir" value="${module.springjdbc.basedir}/springjdbc/doc/api"/>
+    <property name="springjdbc.output.dir" value="${module.springjdbc.basedir}/classes/springjdbc"/>
+
+    <path id="springjdbc.output.dir" location="${springjdbc.output.dir}"/>
+    <path id="springjdbc.module.classpath">
+        <path refid="library.spring.classpath"/>
+    </path>
+
+    <target name="compile.module.springjdbc" description="Compile module springjdbc">
+        <mkdir dir="${springjdbc.output.dir}"/>
+        <javac destdir="${springjdbc.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true"
+               srcdir="${springjdbc.src.dir}">
+            <classpath refid="springjdbc.module.classpath"/>
+        </javac>
+    </target>
+
+    <target name="clean.module.springjdbc">
+        <delete dir="${springjdbc.output.dir}"/>
+    </target>
+    <target name="springjdbc.jar" depends="clean.module.springjdbc, compile.module.springjdbc"
+            description="build springjdbc.jar">
+        <jar basedir="classes/springjdbc" jarfile="dist/springjdbc.jar"/>
+    </target>
+    <target name="springjdbc.javadoc" description="Generate SpringJdbc javadoc">
+        <javadoc sourcepath="${springjdbc.src.dir}" destdir="${springjdbc.doc.api.dir}" package="de.jexp.jequel">
+            <fileset dir="${springjdbc.src.dir}" includes="**/*.java"/>
+        </javadoc>
+    </target>
+
+
+</project>
