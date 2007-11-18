@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+    <bean id="namedQuery" class="de.jexp.bricksandmortar.database.NamedParameterQueryStep" abstract="true">
+        <property name="dataSource" ref="testDataSource"/>
+    </bean>
+
+    <bean id="testDataSource" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="staticMethod"
+                  value="de.jexp.bricksandmortar.WorkflowStepTestUtils.createAndSetupHsqlDatasource"/>
+        <property name="singleton" value="true"/>
+    </bean>
+</beans>

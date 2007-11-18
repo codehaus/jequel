@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd"
+        >
+    <import resource="../config.spring.xml"/>
+
+    <bean id="abgleichDispatch" parent="LoggingWorkflow">
+        <property name="steps">
+            <list>
+                <bean name="keys" parent="informixSelect">
+                    <property name="query" value="
+                    SELECT  key KEY
+                    FROM    EDI_DATA
+                    WHERE   rcvdate > '20071101'
+                        AND msgtyp = 'ORDRSP'
+                    "/>
+                </bean>
+                <bean name="keysList" class="de.jexp.bricksandmortar.transformation.ListOperationStep">
+                    <property name="operation" value="TRANSPOSE"/>
+                    <property name="paramName" value="keys"/>
+                </bean>
+                <bean name="ean" parent="informixSelect">
+                    <property name="query" value="
+                    SELECT  distinct a35_01 EAN
+                    FROM    edi_data
+                    WHERE   (key in (:KEY))
+                    "/>
+                    <property name="paramName" value="keysList"/>
+                </bean>
+
+                <bean name="eanList" class="de.jexp.bricksandmortar.transformation.ListOperationStep">
+                    <property name="operation" value="TRANSPOSE"/>
+                    <property name="paramName" value="ean"/>
+                </bean>
+                <bean name="webShopData" class="de.jexp.bricksandmortar.database.IbatisQueryStep">
+                    <property name="sqlMapClient" ref="oracleSqlMapClient"/>
+                    <property name="query" value="selectArticleData"/>
+                    <property name="paramName" value="eanList"/>
+                </bean>
+
+                <bean class="de.jexp.bricksandmortar.output.WriteTextStep">
+                    <property name="paramName" value="webShopData"/>
+                </bean>
+
+                <bean name="webShopDataExcel" class="de.jexp.bricksandmortar.format.ExcelReportStep">
+                    <property name="paramName" value="webShopData"/>
+                </bean>
+
+                <bean class="de.jexp.bricksandmortar.output.WriteFileStep">
+                    <property name="paramName" value="webShopDataExcel"/>
+                </bean>
+
+                <bean name="insertWebShop" class="de.jexp.bricksandmortar.database.IbatisUpdateStep">
+                    <property name="execute" value="false"/>
+                    <property name="query" value="insertWebshopData"/>
+                    <property name="paramName" value="webShopData"/>
+                    <property name="sqlMapClient" ref="webshopSqlMapClient"/>
+                </bean>
+
+                <bean parent="mail">
+                    <property name="paramName" value="webShopDataExcel"/>
+                </bean>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="oracleSqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+        <!--suppress SpringModelInspection -->
+        <property name="configLocation" value="webShop.sqlconfig.xml"/>
+        <property name="dataSource" ref="oracle"/>
+    </bean>
+    <bean id="webshopSqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+        <!--suppress SpringModelInspection -->
+        <property name="configLocation" value="webShop.sqlconfig.xml"/>
+        <property name="dataSource" ref="informix"/>
+    </bean>
+</beans>

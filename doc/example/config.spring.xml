@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+    <!-- Convenience Parent Beans for Selects -->
+    <import resource="beans.spring.xml"/>
+    <bean id="oracleSelect" class="de.jexp.bricksandmortar.database.NamedParameterQueryStep" abstract="true" lazy-init="true" scope="prototype">
+        <property name="dataSource" ref="oracle"/>
+    </bean>
+
+    <bean id="informixSelect" class="de.jexp.bricksandmortar.database.NamedParameterQueryStep" abstract="true" lazy-init="true" scope="prototype">
+        <property name="dataSource" ref="informix"/>
+    </bean>
+
+    <bean id="oracle" class="org.springframework.jdbc.datasource.DriverManagerDataSource" lazy-init="true">
+        <property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@10.0.0.1:1521:test"/>
+        <property name="username" value="test"/>
+        <property name="password" value="none"/>
+    </bean>
+
+
+    <bean id="informix" class="org.springframework.jdbc.datasource.DriverManagerDataSource" lazy-init="true">
+        <property name="driverClassName" value="com.informix.jdbc.IfxDriver"/>
+        <property name="url" value="jdbc:informix-sqli://10.0.0.2:1526/test:informixServer=test"/>
+        <property name="username" value="test"/>
+        <property name="password" value="none"/>
+    </bean>
+
+    <!-- mail config -->
+    <bean name="mail" class="de.jexp.bricksandmortar.mail.SendMailStep" abstract="true">
+        <property name="mailSender">
+            <bean class="org.springframework.mail.javamail.JavaMailSenderImpl">
+                <property name="host" value="smtp.host.com"/>
+            </bean>
+        </property>
+        <property name="mailTemplate">
+            <bean class="org.springframework.mail.SimpleMailMessage">
+                <property name="to" value="mh14@bricksandmortar.de"/>
+                <property name="from" value="reports@bricksandmortar.de"/>
+                <property name="subject" value="From Reportgenerator"/>
+            </bean>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,12 @@
+<!DOCTYPE sqlMap
+        PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap>
+    <select id="testSelect" resultClass="hashmap">
+        select * from article
+    </select>
+
+    <select id="testSelectParam" resultClass="hashmap">
+        select * from article where name=#name#
+    </select>
+</sqlMap>
