@@ -1,0 +1,23 @@
+<!DOCTYPE sqlMap
+        PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap>
+    <select id="selectArticleData" resultClass="hashmap" parameterClass="map">
+    <!-- simplified -->
+        select article.*
+        from article
+        , article_ean
+        where article_ean.article_oid = article.oid
+            <iterate prepend=" AND article_ean.ean IN " open ="(" close=")" property="EAN" conjunction=", ">
+                #EAN[]#
+            </iterate>
+    order by article_no
+    </select>
+    <insert id="insertWebshopData" parameterClass="map">
+        <!-- simplified -->
+        INSERT INTO if_webshop
+        (OID, ATTR1, ATTR2, STATUS)
+        VALUES
+        (IF_WEBSHOP_SEQ.NEXTVAL, #ATTR1#, #ATTR2#, 1)
+    </insert>
+</sqlMap>
