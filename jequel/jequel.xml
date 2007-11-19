@@ -33,19 +33,18 @@
     </path>
     <!-- Modules -->
 
-    <import file="${basedir}/module_springjdbc.xml"/>
+    <import file="${basedir}/../springjdbc/module_springjdbc.xml"/>
     <import file="${basedir}/module_jequel.xml"/>
     <import file="${basedir}/module_test.xml"/>
-    <import file="${basedir}/module_alexa.xml"/>
     <import file="${basedir}/module_ant.xml"/>
 
 
     <target name="clean.all"
-            depends="clean.module.springjdbc, clean.module.jequel, clean.module.test, clean.module.alexa, clean.module.ant"
+            depends="clean.module.springjdbc, clean.module.jequel, clean.module.test, clean.module.ant"
             description="cleanup all"/>
 
     <target name="build.all"
-            depends="clean.all, compile.module.springjdbc, compile.module.jequel, compile.module.test, compile.module.alexa, compile.module.ant"
+            depends="clean.all, compile.module.springjdbc, compile.module.jequel, compile.module.test, compile.module.ant"
             description="build all"/>
 
     <target name="src.jar" description="build src.jar">
