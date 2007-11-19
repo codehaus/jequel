@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="module_test" default="compile.module.test">
+    <dirname property="module.test.basedir" file="${ant.file.module_test}"/>
+
+    <property name="test.src.dir" value="${module.test.basedir}/unit/src"/>
+    <property name="test.test_src.dir" value="${module.test.basedir}/unit/test"/>
+    <property name="test.output.dir" value="${module.test.basedir}/classes/test"/>
+
+    <path id="test.module.classpath">
+        <pathelement location="${springjdbc.output.dir}"/>
+        <pathelement location="${jequel.output.dir}"/>
+        <path refid="library.spring.classpath"/>
+        <path refid="library.test.classpath"/>
+    </path>
+
+    <path id="test.module.test.classpath">
+        <path refid="test.module.classpath"/>
+        <path refid="library.schemacrawler.classpath"/>
+        <pathelement location="${test.output.dir}"/>
+    </path>
+
+    <target name="compile.module.test" depends="compile.module.jequel" description="Compile module test">
+        <mkdir dir="${test.output.dir}"/>
+        <javac destdir="${test.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true">
+            <classpath refid="test.module.classpath"/>
+            <src location="${test.src.dir}"/>
+            <src location="${test.test_src.dir}"/>
+        </javac>
+    </target>
+
+    <target name="clean.module.test">
+        <delete dir="${test.output.dir}"/>
+    </target>
+
+    <target name="runtest.module.test" depends="compile.module.test" description="run tests">
+        <junit fork="true" printsummary="true" haltonfailure="true" showoutput="true">
+            <formatter type="brief" usefile="false"/>
+            <classpath refid="test.module.test.classpath"/>
+            <batchtest>
+                <fileset dir="${test.test_src.dir}">
+                    <include name="**/*Test.java"/>
+                    <exclude name="**/Abstract*Test.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+
+</project>

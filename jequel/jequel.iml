@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module relativePaths="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/classes/jequel" />
+    <exclude-output />
+    <output-test url="file://$MODULE_DIR$/classes/test" />
+    <content url="file://$MODULE_DIR$/jequel">
+      <sourceFolder url="file://$MODULE_DIR$/jequel/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/jequel/doc" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="schemacrawler" level="project" />
+    <orderEntry type="library" name="spring" level="project" />
+    <orderEntry type="module" module-name="springjdbc" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/unit/data" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntryProperties />
+  </component>
+</module>
+

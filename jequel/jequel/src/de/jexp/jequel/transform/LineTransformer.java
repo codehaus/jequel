@@ -106,7 +106,6 @@ public class LineTransformer {
         final StringBuffer sb = new StringBuffer(line.length());
         while (identiferMatch.find()) {
             identiferMatch.appendReplacement(sb, nullSafeUpcase(identiferMatch.group()));
-            identiferMatch.
         }
         identiferMatch.appendTail(sb);
         return sb.toString();

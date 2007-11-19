@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="module_jequel" default="compile.module.jequel">
+    <dirname property="module.jequel.basedir" file="${ant.file.module_jequel}"/>
+
+
+    <property name="compiler.args.jequel" value="${compiler.args}"/>
+
+    <property name="jequel.output.dir" value="${module.jequel.basedir}/classes/jequel"/>
+    <property name="jequel.src.dir" value="${module.jequel.basedir}/jequel/src"/>
+    <property name="jequel.doc.api.dir" value="${module.jequel.basedir}/jequel/doc/api"/>
+
+    <path id="jequel.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="jequel.module.classpath">
+        <path refid="springjdbc.output.dir"/>
+        <path refid="library.spring.classpath"/>
+        <path refid="library.schemacrawler.classpath"/>
+    </path>
+
+    <path id="jequel.runtime.module.classpath">
+        <path refid="springjdbc.output.dir"/>
+        <path refid="library.spring.classpath"/>
+        <path refid="library.schemacrawler.classpath"/>
+    </path>
+
+
+    <target name="compile.module.jequel" depends="compile.module.springjdbc" description="Compile module jequel">
+        <mkdir dir="${jequel.output.dir}"/>
+        <javac destdir="${jequel.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true"
+               srcdir="jequel/src">
+            <compilerarg line="${compiler.args.jequel}"/>
+            <classpath refid="jequel.module.classpath"/>
+        </javac>
+    </target>
+
+    <target name="clean.module.jequel">
+        <delete dir="${jequel.output.dir}"/>
+
+    </target>
+    <target name="jar" depends="clean.module.jequel, compile.module.jequel" description="build jequel jar">
+        <jar basedir="classes/jequel" jarfile="dist/jequel.jar"/>
+    </target>
+
+    <target name="rebuild.module.jequel" depends="clean.module.jequel, compile.module.jequel"
+            description="rebuild jequel"/>
+
+    <target name="javadoc" description="Generate Jequel javadoc">
+        <javadoc sourcepath="${jequel.src.dir}" destdir="${jequel.doc.api.dir}" package="de.jexp.jequel">
+            <fileset dir="${jequel.src.dir}" includes="**/*.java"/>
+        </javadoc>
+    </target>
+</project>

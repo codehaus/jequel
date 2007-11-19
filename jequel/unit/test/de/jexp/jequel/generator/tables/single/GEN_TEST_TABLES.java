@@ -8,7 +8,7 @@ import java.sql.Timestamp;
 
 /**
  * @author de.jexp.jequel.generator.JavaFileGenerationProcessor
- * @since So Nov 18 09:59:33 CET 2007
+ * @since Mo Nov 19 01:04:14 CET 2007
  * Generated from: TEST 
  */
 

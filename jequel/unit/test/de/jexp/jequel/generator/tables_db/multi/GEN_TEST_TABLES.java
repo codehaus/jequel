@@ -8,7 +8,7 @@ import java.sql.Timestamp;
 
 /**
  * @author de.jexp.jequel.generator.JavaFileGenerationProcessor
- * @since So Nov 18 09:59:34 CET 2007
+ * @since Mo Nov 19 01:04:14 CET 2007
  * Generated from: -- database product: HSQL Database Engine 1.8.0
 -- driver: org.hsqldb.jdbcDriver - HSQL Database Engine Driver 1.8.0
 -- connection: jdbc:hsqldb:data/test

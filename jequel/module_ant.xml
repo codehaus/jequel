@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="module_ant" default="compile.module.ant">
+    <dirname property="module.ant.basedir" file="${ant.file.module_ant}"/>
+
+    <property name="ant.src.dir" value="${module.ant.basedir}/ant/src"/>
+    <property name="ant.output.dir" value="${module.ant.basedir}/classes/ant"/>
+
+    <path id="ant.module.classpath">
+        <pathelement location="${jequel.output.dir}"/>
+        <path refid="library.spring.classpath"/>
+        <path refid="library.ant.classpath"/>
+    </path>
+
+    <path id="test.module.ant.classpath">
+        <path refid="ant.module.classpath"/>
+        <pathelement location="${ant.output.dir}"/>
+    </path>
+
+    <target name="compile.module.ant" depends="compile.module.jequel" description="Compile module ant">
+        <mkdir dir="${ant.output.dir}"/>
+        <javac destdir="${ant.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true"
+               srcdir="${ant.src.dir}">
+            <classpath refid="ant.module.classpath"/>
+        </javac>
+    </target>
+
+    <target name="clean.module.ant">
+        <delete dir="${ant.output.dir}"/>
+    </target>
+
+    <target name="runtest.module.ant" depends="compile.module.ant" description="run tests">
+        <junit fork="true" printsummary="true" haltonfailure="true">
+            <classpath refid="test.module.ant.classpath"/>
+            <batchtest>
+                <fileset dir="${ant.src.dir}">
+                    <include name="**/*Test.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+
+    <target name="ant-jequel.jar" depends="clean.module.jequel, compile.module.jequel, clean.module.ant, compile.module.ant" description="build ant-jequel.jar">
+        <jar basedir="classes/ant" jarfile="dist/ant-jequel.jar"/>
+    </target>
+
+</project>
