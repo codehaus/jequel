@@ -18,6 +18,9 @@ public class ListOperationStepTest extends WorkflowStepTest<ListOperationStep> {
     private static final ListStepResult SOURCE_LIST_RESULT2 = new ListStepResult(TEST_LIST_NAME2,
             WorkflowStepTestUtils.getDefaultArticleTestDataList2());
 
+    private static final ListStepResult SOURCE_LIST_RESULT_SAME_KEY = new ListStepResult(TEST_LIST_NAME2,
+            WorkflowStepTestUtils.getDefaultArticleTestDataListSameKey());
+
 
     public void testSourceListName() {
         step.setParamName(TEST_LIST_NAME);

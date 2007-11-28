@@ -3,6 +3,8 @@ package de.jexp.bricksandmortar.execution;
 import de.jexp.bricksandmortar.*;
 import junit.framework.TestCase;
 
+import java.util.Arrays;
+
 public class ReportWorkflowTest extends TestCase {
     private ReportWorkflow reportWorkflow;
 
@@ -39,6 +41,29 @@ public class ReportWorkflowTest extends TestCase {
 
     public void testDirectory() {
         reportWorkflow.setDirectory("testDir");
+        assertEquals("testDir"+reportWorkflow.date(),reportWorkflow.getDirectory());
+    }
+
+    public void testException() {
+        final RuntimeException runtimeException = new RuntimeException();
+        final ReportWorkflow workflow = new ReportWorkflow() {
+            protected void handleException(final Throwable t) {
+                assertSame(runtimeException, t);
+            }
+        };
+        workflow.setSteps(Arrays.asList(new WorkflowStep() {
+            public void runStep(final WorkflowContext workflowContext) {
+                throw runtimeException;
+            }
+
+            public String getName() {
+                return "Exception";
+            }
+
+            public void setLogWriter(final StepResultWriter logWriter) {
+            }
+        }));
+        assertEquals(0,workflow.runWorkflow());
     }
 
     protected void setUp() {

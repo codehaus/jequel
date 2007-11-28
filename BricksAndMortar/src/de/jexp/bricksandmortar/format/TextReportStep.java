@@ -12,13 +12,13 @@ import java.util.*;
  * Created by mh14 on 06.07.2007 11:30:09
  */
 public class TextReportStep extends NamedWorkflowStep {
-    private String resultName;
-
     public void runStep(final WorkflowContext workflowContext) {
-        final ListStepResult result = (ListStepResult) workflowContext.getResult(getResultName());
-        setOnWorkflowContext(workflowContext, processResult(result));
+        final Collection<ListStepResult> listStepResults = filterParams(workflowContext, getParamNames(), ListStepResult.class);
+        for (ListStepResult listStepResult : listStepResults) {
+            setOnWorkflowContext(workflowContext, formatAsText(listStepResult));
+        }
     }
-    protected TextStepResult processResult(final ListStepResult result) {
+    protected TextStepResult formatAsText(final ListStepResult result) {
         final Collection<Map<String, ?>> list = result.getResult();
         final StringBuilder sb = createText(list);
         return new TextStepResult(getName(),sb);
@@ -26,13 +26,5 @@ public class TextReportStep extends NamedWorkflowStep {
 
     protected StringBuilder createText(final Collection<Map<String, ?>> list) {
         return TextUtils.createText(list);
-    }
-
-    public String getResultName() {
-        return resultName;
-    }
-
-    public void setResultName(final String resultName) {
-        this.resultName = resultName;
     }
 }

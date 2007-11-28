@@ -17,7 +17,7 @@ public class TextReportStepTest extends WorkflowStepTest<TextReportStep> {
     public void testTextStep() {
         final Collection<Map<String, ?>> testData = WorkflowStepTestUtils.getDefaultArticleTestDataList();
         final WorkflowContext ctx = new WorkflowContext();
-        ctx.addResult(new ListStepResult(step.getResultName(), testData));
+        ctx.addResult(new ListStepResult(step.getParamName(), testData));
         step.runStep(ctx);
         final TextStepResult result = ctx.getResult(TEXT_STEP);
         assertEquals("text step ", NAME + TAB + PRICE + NEWLINE + TEST_ARTICLE + TAB + TEST_PRICE_5 + NEWLINE, result.getResult().toString());
@@ -26,7 +26,7 @@ public class TextReportStepTest extends WorkflowStepTest<TextReportStep> {
 
     protected void setUp() {
         step = new TextReportStep();
-        step.setResultName("result");
+        step.setParamName("result");
         step.setName(TEXT_STEP);
     }
 

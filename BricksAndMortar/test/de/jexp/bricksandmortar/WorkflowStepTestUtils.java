@@ -55,6 +55,13 @@ public class WorkflowStepTestUtils {
         return result;
     }
 
+    public static Collection<Map<String, ?>> getDefaultArticleTestDataListSameKey() {
+        final Map<String, ?> row = createTestRow(TEST_ARTICLE, TEST_PRICE_10);
+        final Collection<Map<String, ?>> result = new ArrayList<Map<String, ?>>();
+        result.add(row);
+        return result;
+    }
+
     public static List<Map<String, ?>> getDefaultArticleTestDataList2() {
         final List<Map<String, ?>> result = new LinkedList<Map<String, ?>>();
         result.add(createTestRow(TEST_ARTICLE, TEST_PRICE_5));
@@ -63,13 +70,13 @@ public class WorkflowStepTestUtils {
     }
 
     private static Map<String, Object> createTestRow(final String name, final BigDecimal price) {
-        final Map<String, Object> row = new LinkedHashMap<String, Object>(2);
+        final Map<String, Object> row = new HashMap<String, Object>(2);
         row.put(NAME, name);
         row.put(PRICE, price);
         return row;
     }
 
-    public static void assertEquals(final String message, final Collection<?> expected, final Collection<?> got) {
+    public static void assertEquals(final String message, final Collection expected, final Collection got) {
         Assert.assertEquals(message + " size", expected.size(), got.size());
         Assert.assertTrue(message + " elements", expected.containsAll(got));
     }

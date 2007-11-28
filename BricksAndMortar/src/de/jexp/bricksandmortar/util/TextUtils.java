@@ -1,9 +1,6 @@
 package de.jexp.bricksandmortar.util;
 
-import java.util.Collection;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by mh14 on 06.07.2007 12:45:37

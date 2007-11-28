@@ -1,6 +1,7 @@
 package de.jexp.bricksandmortar.transformation;
 
 import de.jexp.bricksandmortar.results.ListStepResult;
+import de.jexp.bricksandmortar.util.RestrictedKeys;
 
 import java.util.*;
 
@@ -9,63 +10,67 @@ import java.util.*;
  */
 public enum ListOperation {
     NOOP {
-        public ListStepResult perform(final List<ListStepResult> sources) {
-            return sources.get(0);
+        public ListStepResult perform(final Collection<ListStepResult> sources, final String... keys) {
+            return sources.iterator().next();
         }
     },
     TRANSPOSE {
-        public ListStepResult perform(final List<ListStepResult> sources) {
-            final Collection<Map<String, ?>> firstSource = sources.get(0).getResult();
+        public ListStepResult perform(final Collection<ListStepResult> sources, final String... keys) {
+            final Collection<Map<String, ?>> firstSource = sources.iterator().next().getResult();
             final Map<String, Collection<?>> result = new LinkedHashMap<String, Collection<?>>();
+
+            final Iterable<String> keyIterable = RestrictedKeys.hasKeys(keys) ? Arrays.asList(keys) : null;
+
             for (final Map<String, ?> row : firstSource) {
-                for (final Map.Entry<String, ?> column : row.entrySet()) {
-                    Collection<Object> columnCollection = (Collection<Object>) result.get(column.getKey());
+                for (final String key : keyIterable != null ? keyIterable : row.keySet()) {
+                    final Object value = row.get(key);
+                    Collection<Object> columnCollection = (Collection<Object>) result.get(key);
                     if (columnCollection == null) {
                         columnCollection = new ArrayList<Object>(firstSource.size());
-                        result.put(column.getKey(), columnCollection);
+                        result.put(key, columnCollection);
                     }
-                    columnCollection.add(column.getValue());
+                    columnCollection.add(value);
                 }
             }
-            final List<Map<String,?>> resultCollection = new ArrayList<Map<String, ?>>();
+            final List<Map<String, ?>> resultCollection = new ArrayList<Map<String, ?>>();
             resultCollection.add(result);
             return new ListStepResult(operationName(), resultCollection);
         }
     },
     UNION {
-        public ListStepResult perform(final List<ListStepResult> sources) {
+        public ListStepResult perform(final Collection<ListStepResult> sources, final String... keys) {
             int size = 0;
             for (final ListStepResult list : sources) {
                 size += list.getResult().size();
             }
-            final Set<Map<String, ?>> result = new HashSet<Map<String, ?>>(size);
+            final Set<Map<String, ?>> result = RestrictedKeys.createSet(size, keys);
             for (final ListStepResult list : sources) {
                 result.addAll(list.getResult());
             }
-            return new ListStepResult(operationName(), result);
+            return new ListStepResult(operationName(), RestrictedKeys.resolve(result,keys));
         }},
     INTERSECTION {
-        public ListStepResult perform(final List<ListStepResult> sources) {
+        public ListStepResult perform(final Collection<ListStepResult> sources, final String... keys) {
             Set<Map<String, ?>> result = null;
             for (final ListStepResult list : sources) {
                 if (result == null) {
-                    result = new HashSet<Map<String, ?>>(list.getResult());
+                    result = RestrictedKeys.createSet(list, keys);
                 } else
                     result.retainAll(list.getResult());
             }
-            return new ListStepResult(operationName(), result);
+            return new ListStepResult(operationName(), RestrictedKeys.resolve(result,keys));
         }
     },
     DIFFERENCE {
-        public ListStepResult perform(final List<ListStepResult> sources) {
+        public ListStepResult perform(final Collection<ListStepResult> sources, final String... keys) {
             Set<Map<String, ?>> result = null;
             for (final ListStepResult list : sources) {
                 if (result == null) {
-                    result = new HashSet<Map<String, ?>>(list.getResult());
+                    result = RestrictedKeys.createSet(list, keys);
                 } else
                     result.removeAll(list.getResult());
             }
-            return new ListStepResult(operationName(), result);
+            return new ListStepResult(operationName(), RestrictedKeys.resolve(result,keys));
         }
     };
 
@@ -73,5 +78,6 @@ public enum ListOperation {
         return name().toLowerCase();
     }
 
-    public abstract ListStepResult perform(final List<ListStepResult> sources);
+    public abstract ListStepResult perform(final Collection<ListStepResult> sources, final String... keys);
+
 }

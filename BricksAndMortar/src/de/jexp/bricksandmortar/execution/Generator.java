@@ -23,6 +23,7 @@ public class Generator {
     }
 
     public static void main(final String[] args) {
+        System.out.println("ClassPath = " + System.getProperty("java.class.path"));
         final Collection<String> contexts = new ArrayList<String>();
         final Collection<String> targets = new ArrayList<String>();
         for (final String arg : args) {

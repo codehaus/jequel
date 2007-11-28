@@ -87,7 +87,7 @@ public class SendMailStep extends NamedWorkflowStep {
         return helper;
     }
 
-    private void sendTextMessage(final Collection<TextStepResult> textsToSend) {
+    public void sendTextMessage(final Collection<TextStepResult> textsToSend) {
         final SimpleMailMessage msg = new SimpleMailMessage(mailTemplate);
         msg.setText(createMessageText(textsToSend));
         mailSender.send(msg);
