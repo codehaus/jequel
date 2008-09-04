@@ -16,7 +16,13 @@ import de.jexp.bricksandmortar.output.LogStepResultWriter;
 import de.jexp.bricksandmortar.results.ErrorStepResult;
 import de.jexp.bricksandmortar.results.TextStepResult;
 import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.support.TransactionTemplate;
+import org.springframework.transaction.support.TransactionCallback;
 
+import javax.annotation.Resource;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Collections;
@@ -41,21 +47,39 @@ public class ReportWorkflow implements BeanNameAware {
         this.steps = steps;
     }
 
+    private PlatformTransactionManager transactionManager;
+
+    public void setTransactionManager(final PlatformTransactionManager transactionManager) {
+        this.transactionManager = transactionManager;
+    }
+
     public int runWorkflow() {
+        if (transactionManager==null) return doRunWorkflow(null);
+
+        final TransactionTemplate template = new TransactionTemplate(transactionManager);
+        return (Integer) template.execute(new TransactionCallback() {
+            public Object doInTransaction(final TransactionStatus status) {
+                return doRunWorkflow(status);
+            }
+        });
+    }
+
+    private int doRunWorkflow(final TransactionStatus status) {
         int successCount = 0;
         for (final WorkflowStep step : steps) {
             try {
                 runStep(step);
                 successCount++;
             } catch (final Throwable t) {
-                handleException(t);
+                handleException(t,status);
                 break;
             }
         }
         return successCount;
     }
 
-    protected void handleException(final Throwable t) {
+    protected void handleException(final Throwable t, final TransactionStatus status) {
+        if (status!=null) status.setRollbackOnly();
         t.printStackTrace();
         final SendMailStep errorMailSender = getErrorMail();
         if (errorMailSender != null) {

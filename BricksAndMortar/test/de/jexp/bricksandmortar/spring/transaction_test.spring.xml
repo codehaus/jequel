@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:tx="http://www.springframework.org/schema/tx"
+     xsi:schemaLocation="
+     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+     http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+    <import resource="test_base.spring.xml"/>
+    <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+      <property name="dataSource" ref="testDataSource"/>
+    </bean>
+
+    <bean id="workflow" class="de.jexp.bricksandmortar.execution.ReportWorkflow">
+        <property name="logResults" value="false"/>
+        <property name="directory" value="test_spring"/>
+        <property name="transactionManager" ref="transactionManager"/>
+        <property name="steps">
+            <list>
+                <bean name="articles" parent="namedUpdate">
+                    <property name="query" value="update article set price = 20"/>
+                </bean>
+                <ref bean="testStep"/>
+            </list>
+        </property>
+    </bean>
+    <bean name="testStep" class="de.jexp.bricksandmortar.execution.TestStep"/>
+</beans>

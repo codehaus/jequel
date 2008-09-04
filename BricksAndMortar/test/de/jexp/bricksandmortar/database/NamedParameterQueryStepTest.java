@@ -22,6 +22,6 @@ public class NamedParameterQueryStepTest extends WorkflowStepTest<NamedParameter
     protected void setUp() {
         step = new NamedParameterQueryStep();
         step.setBeanName("testQueryStep");
-        step.setDataSource(getHsqlDataSource());
+        step.setDataSource(getDataSource());
     }
 }

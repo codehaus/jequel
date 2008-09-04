@@ -79,7 +79,7 @@ public class NamedParameterUpdateStepTest extends WorkflowStepTest<NamedParamete
     }
 
     protected DataSource createRollbackDataSource() throws SQLException {
-        connection = getHsqlDataSource().getConnection();
+        connection = getDataSource().getConnection();
         connection.setAutoCommit(false);
         return new SingleConnectionDataSource(connection, true);
     }

@@ -18,17 +18,29 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" name="Default" comment="" />
+    <list default="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/execution/ReportWorkflowTest.java" afterPath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/execution/ReportWorkflowTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/execution/ReportWorkflow.java" afterPath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/execution/ReportWorkflow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/database/IbatisQueryStepTest.java" afterPath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/database/IbatisQueryStepTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BrickAndMortar.iml" afterPath="$PROJECT_DIR$/BrickAndMortar.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/execution/TestStep.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/test_base.spring.xml" afterPath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/test_base.spring.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/database/NamedParameterUpdateStepTest.java" afterPath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/database/NamedParameterUpdateStepTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/transaction_test.spring.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/database/NamedParameterQueryStepTest.java" afterPath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/database/NamedParameterQueryStepTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/SpringTransactionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BricksAndMortar.ipr" afterPath="$PROJECT_DIR$/BricksAndMortar.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/WorkflowStepTest.java" afterPath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/WorkflowStepTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/WorkflowStepTestUtils.java" afterPath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/WorkflowStepTestUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BricksAndMortar.iws" afterPath="$PROJECT_DIR$/BricksAndMortar.iws" />
+    </list>
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="Commander">
     <leftPanel />
     <rightPanel />
     <splitter proportion="0.5" />
-  </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="COMPILE_IN_BACKGROUND" value="true" />
-    <option name="CLEAR_OUTPUT_DIRECTORY" value="true" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -95,10 +107,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ListOperation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/jexp/bricksandmortar/transformation/ListOperation.java">
+      <file leaf-file-name="transaction_test.spring.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/transaction_test.spring.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.31232876">
+            <state line="18" column="70" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.76510066">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringTransactionTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/SpringTransactionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="57" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.14327486">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,42 +130,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListOperationStepTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/transformation/ListOperationStepTest.java">
+      <file leaf-file-name="TestStep.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/execution/TestStep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="50" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.2742857">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListOperationKeyTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/transformation/ListOperationKeyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="73" selection-start="3456" selection-end="3456" vertical-scroll-proportion="0.4342857">
+            <state line="11" column="0" selection-start="370" selection-end="370" vertical-scroll-proportion="0.32748538">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#setFail#0;class#TestStep#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextUtilsTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/util/TextUtilsTest.java">
+      <file leaf-file-name="ReportWorkflow.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/de/jexp/bricksandmortar/execution/ReportWorkflow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="141" selection-end="141" vertical-scroll-proportion="0.13714285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RestrictedKeys.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/jexp/bricksandmortar/util/RestrictedKeys.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="64" selection-start="413" selection-end="413" vertical-scroll-proportion="0.48">
+            <state line="58" column="0" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.32748538">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getValues#0;class#RestrictedKeys#0" expanded="true" />
+                <element signature="method#getSteps#0;class#ReportWorkflow#0" expanded="true" />
+                <element signature="method#setSteps#0;class#ReportWorkflow#0" expanded="true" />
+                <element signature="method#setTransactionManager#0;class#ReportWorkflow#0" expanded="true" />
+                <element signature="method#getWorkflowContext#0;class#ReportWorkflow#0" expanded="true" />
+                <element signature="method#setBeanName#0;class#ReportWorkflow#0" expanded="true" />
+                <element signature="method#getName#0;class#ReportWorkflow#0" expanded="true" />
+                <element signature="method#getErrorMail#0;class#ReportWorkflow#0" expanded="true" />
+                <element signature="method#setErrorMail#0;class#ReportWorkflow#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,6 +171,10 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="SORT_ALPHABETICALLY" value="false" />
     <option name="HIDE_CLASSES_WHERE_METHOD_NOT_IMPLEMENTED" value="false" />
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.6" />
+    <option name="runMavenInBackground" value="true" />
   </component>
   <component name="ModuleEditorState">
     <option name="LAST_EDITED_MODULE_NAME" />
@@ -313,6 +330,11 @@
       </PATH>
     </subPane>
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <profile-state profile-name="Project Default">
+      <state />
+    </profile-state>
+  </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -333,297 +355,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="BrickAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
           <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BrickAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BrickAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test/de/jexp/bricksandmortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BrickAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test/de/jexp/bricksandmortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test/de/jexp/bricksandmortar/util" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BrickAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test/de/jexp/bricksandmortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test/de/jexp/bricksandmortar/transformation" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BrickAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test/de/jexp/bricksandmortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test/de/jexp/bricksandmortar/format" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BrickAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test/de/jexp/bricksandmortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test/de/jexp/bricksandmortar/execution" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BrickAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test/de/jexp/bricksandmortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/test/de/jexp/bricksandmortar/database" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BrickAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/de/jexp/bricksandmortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BrickAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/de/jexp/bricksandmortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/de/jexp/bricksandmortar/util" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BrickAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/de/jexp/bricksandmortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/de/jexp/bricksandmortar/transformation" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BrickAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/de/jexp/bricksandmortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/de/jexp/bricksandmortar/format" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="alexa" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="alexa" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -631,29 +363,19 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="&lt; 1.5 &gt;" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="alexa" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="&lt; 1.5 &gt;" />
+          <option name="myItemId" value="org.springframework:spring:2.5.5" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar" />
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org/springframework" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -663,7 +385,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="alexa" />
+          <option name="myItemId" value="BricksAndMortar" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -671,19 +393,23 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="&lt; 1.5 &gt;" />
+          <option name="myItemId" value="org.springframework:spring:2.5.5" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar" />
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java" />
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/util" />
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org/springframework" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org/springframework/transaction" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -693,7 +419,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="alexa" />
+          <option name="myItemId" value="BricksAndMortar" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -701,15 +427,27 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="&lt; 1.5 &gt;" />
+          <option name="myItemId" value="org.springframework:spring:2.5.5" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar" />
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java" />
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org/springframework" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org/springframework/transaction" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org/springframework/transaction/support" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -719,11 +457,267 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="alexa" />
+          <option name="myItemId" value="BricksAndMortar" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/alexa" />
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="org.springframework:spring:2.5.5" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org/springframework" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org/springframework/context" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="org.springframework:spring:2.5.5" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org/springframework" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org/springframework/context" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org/springframework/context/support" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="org.springframework:spring:2.5.5" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar!/org" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="org.springframework:spring:2.5.5" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/test/de/jexp/bricksandmortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/test/de/jexp/bricksandmortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/test/de/jexp/bricksandmortar/spring" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/test/de/jexp/bricksandmortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/test/de/jexp/bricksandmortar/execution" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/src/de/jexp/bricksandmortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/src/de/jexp/bricksandmortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/src/de/jexp/bricksandmortar/execution" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -745,7 +739,7 @@
     <option name="lastEditedConfigurable" value="mail" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="0.61764705" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="0.16666667" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -759,31 +753,35 @@
     </navigator>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="RunManagerConfig.compileBeforeRunning" value="true" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/de/jexp/BricksAndMortar" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="project.structure.last.edited" value="General" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="RunManagerConfig.compileBeforeRunning" value="true" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/de/jexp/BricksAndMortar" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="de.jexp.bricksandmortar" />
+      <recent name="de.jexp.bricksandmortar.transformation" />
+      <recent name="de.jexp.BricksAndMortar" />
+    </key>
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="de.jexp.bricksandmortar.util.RestrictedKeyMapKey" />
       <recent name="de.jexp.BricksAndMortar.util.TextUtils" />
       <recent name="de.jexp.BricksAndMortar.AlexaTestutils" />
       <recent name="de.jexp.BricksAndMortar.WorkflowStepTestUtils" />
       <recent name="WorkflowStepTestUtils" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="de.jexp.bricksandmortar.transformation" />
-      <recent name="de.jexp.BricksAndMortar" />
-    </key>
-    <key name="IntroduceConstantDialog.RECENTS_KEY">
-      <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="de.jexp.BricksAndMortar" />
@@ -807,14 +805,14 @@
     <option name="referencePos" value="0" />
     <option name="showLabels" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.ListOperationKeyTest">
-    <tempConfiguration default="false" name="ListOperationKeyTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
-      <pattern value="de.jexp.bricksandmortar.transformation.*" />
-      <module name="BrickAndMortar" />
+  <component name="RunManager" selected="JUnit.SpringTransactionTest">
+    <tempConfiguration default="false" name="SpringTransactionTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+      <pattern value="de.jexp.bricksandmortar.*" />
+      <module name="BricksAndMortar" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="de.jexp.bricksandmortar.transformation" />
-      <option name="MAIN_CLASS_NAME" value="de.jexp.bricksandmortar.transformation.ListOperationKeyTest" />
+      <option name="PACKAGE_NAME" value="de.jexp.bricksandmortar" />
+      <option name="MAIN_CLASS_NAME" value="de.jexp.bricksandmortar.SpringTransactionTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -826,12 +824,38 @@
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="wholeProject" />
       </option>
+      <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" value="true" />
       </method>
     </tempConfiguration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -856,135 +880,14 @@
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="wholeProject" />
       </option>
+      <envs />
       <method>
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-    </configuration>
-    <configuration default="false" name="Abgleich Dispatch" type="Application" factoryName="Application" enabled="false" merge="false">
-      <option name="MAIN_CLASS_NAME" value="de.jexp.BricksAndMortar.Generator" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="abgleichDispatch.spring.xml" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/alexa/workflows/abgleichDispatch" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="BrickAndMortar" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="3300" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <configuration default="false" name="WebShopTest" type="Application" factoryName="Application" enabled="false" merge="false">
-      <option name="MAIN_CLASS_NAME" value="de.jexp.BricksAndMortar.Generator" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="testWebShop.spring.xml" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/alexa/workflows/webshop" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="alexa" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <configuration default="false" name="All Tests" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
-      <module name="BrickAndMortar" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <configuration default="false" name="WorkflowStepNameTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
-      <pattern value="de.jexp.BricksAndMortar.*" />
-      <module name="BrickAndMortar" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="de.jexp.BricksAndMortar" />
-      <option name="MAIN_CLASS_NAME" value="de.jexp.BricksAndMortar.WorkflowStepNameTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Abgleich Dispatch" />
-      <item index="1" class="java.lang.String" itemvalue="Application.WebShopTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.All Tests" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.WorkflowStepNameTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ListOperationKeyTest" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SpringTransactionTest" />
     </list>
-    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
-      <Host>localhost</Host>
-      <Port>5050</Port>
-    </configuration>
   </component>
   <component name="SQLPlugin.ProjectConfiguration">
     <queries />
@@ -1017,6 +920,8 @@
     <option name="UPDATE_RUN_STATUS" value="false" />
     <option name="UPDATE_RECURSIVELY" value="true" />
     <option name="MERGE_DRY_RUN" value="false" />
+    <configuration useDefault="true">$PROJECT_DIR$/../../.subversion</configuration>
+    <upgradeMode>none</upgradeMode>
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1039,38 +944,41 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="true" />
+    <frame x="-13" y="22" width="1260" height="760" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" order="7" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29163283" order="0" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3227848" order="1" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3227848" order="8" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39873418" order="6" />
-      <window_info id="TestDox" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
-      <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" order="3" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36234176" order="2" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24857838" order="2" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24938068" order="1" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3227848" order="1" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39556962" order="4" />
-      <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="TestDox" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32200646" order="8" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" order="7" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
+      <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" order="3" />
+      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29125413" order="0" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24834983" order="2" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39873418" order="6" />
       <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36084142" order="2" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
-      <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="3" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="Maven Runner Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847896" order="-1" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
+      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
+      <window_info id="Slice" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
+      <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="3" />
+      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -1127,45 +1035,126 @@
       <option name="VERSION" />
     </GetOptions>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/de/jexp/bricksandmortar/WorkflowStep.java">
+    <entry file="file://$PROJECT_DIR$/src/de/jexp/bricksandmortar/NamedWorkflowStep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="56" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+        <state line="2" column="40" selection-start="74" selection-end="74" vertical-scroll-proportion="0.040935673">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/jexp/bricksandmortar/NamedWorkflowStep.java">
+    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/util/TextUtilsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="25" selection-start="1497" selection-end="1497" vertical-scroll-proportion="0.027303753">
+        <state line="7" column="13" selection-start="141" selection-end="141" vertical-scroll-proportion="0.16374269">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/jexp/bricksandmortar/util/RestrictedKeys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="64" selection-start="413" selection-end="413" vertical-scroll-proportion="0.040935673">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panopticode/supplements/checkstyle/checkstyle-imports.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.02460457">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5-sources.jar!/org/springframework/jdbc/datasource/DriverManagerDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="34" selection-start="5819" selection-end="5819" vertical-scroll-proportion="0.64224875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/../Classes/classes.jar!/java/sql/Driver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="17" selection-start="150" selection-end="150" vertical-scroll-proportion="0.09540034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5-sources.jar!/org/springframework/jdbc/datasource/SimpleDriverDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="36" selection-start="3279" selection-end="3279" vertical-scroll-proportion="2.4313726">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/WorkflowStepNameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="90" selection-end="90" vertical-scroll-proportion="0.09540034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/database/NamedParameterQueryStepTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="58" selection-start="237" selection-end="237" vertical-scroll-proportion="0.18372704">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/WorkflowStepTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="42" selection-start="992" selection-end="992" vertical-scroll-proportion="1.2128851">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/format/TextReportStepTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="96" selection-start="735" selection-end="735" vertical-scroll-proportion="0.32748538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/jexp/bricksandmortar/execution/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="86" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.8627451">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/SimpleSpringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="213" selection-end="213" vertical-scroll-proportion="0.16374269">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/WorkflowStepTestUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="34" selection-start="3547" selection-end="3547" vertical-scroll-proportion="2.5882354">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/execution/ReportWorkflowTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="125" selection-end="125" vertical-scroll-proportion="0.13311148">
+        <state line="17" column="4" selection-start="525" selection-end="525" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alexa/workflows/abgleichDispatch/abgleichDispatch.spring.xml">
+    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/simple_read.spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="779" selection-end="779" vertical-scroll-proportion="0.05185185">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alexa/workflows/webshop/testWebShop.spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="52" selection-start="690" selection-end="690" vertical-scroll-proportion="0.35555556">
+        <state line="13" column="31" selection-start="810" selection-end="810" vertical-scroll-proportion="0.6107383">
           <folding />
         </state>
       </provider>
@@ -1175,168 +1164,188 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/test_base.spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="787" selection-end="787" vertical-scroll-proportion="0.4148148">
+        <state line="10" column="91" selection-start="657" selection-end="657" vertical-scroll-proportion="0.46979865">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/simple_read.spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="528" selection-end="1226" vertical-scroll-proportion="0.23703703">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alexa/workflows/beans.spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alexa/alexa.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="50" selection-start="799" selection-end="799" vertical-scroll-proportion="0.37271214">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/jexp/bricksandmortar/format/TextReportStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="13" selection-start="984" selection-end="984" vertical-scroll-proportion="0.34812286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/format/TextReportStepTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="42" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.28668943">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/database/IbatisQueryStepTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.57337886">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/test.config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.27507162">
+        <state line="5" column="50" selection-start="255" selection-end="255" vertical-scroll-proportion="0.20648968">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/WorkflowStepTestUtils.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="39" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.034285713">
+        <state line="28" column="31" selection-start="948" selection-end="948" vertical-scroll-proportion="0.58702064">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/util/Set.class">
+    <entry file="jar://$PROJECT_DIR$/../../.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="669" selection-end="669" vertical-scroll-proportion="0.57260275">
+        <state line="884" column="0" selection-start="34206" selection-end="34206" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/util/TreeMap.class">
+    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/SpringTransactionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="13" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.33142856">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/util/HashSet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="50" selection-start="184" selection-end="184" vertical-scroll-proportion="0.13714285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/util/AbstractSet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="61" selection-start="195" selection-end="195" vertical-scroll-proportion="0.13150685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/util/AbstractCollection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="19" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.98630136">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/jexp/bricksandmortar/transformation/ListOperationStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="27" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.6857143">
-          <folding>
-            <element signature="method#getKeys#0;class#ListOperationStep#0" expanded="true" />
-            <element signature="method#setKeys#0;class#ListOperationStep#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/jexp/bricksandmortar/transformation/ListOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.31232876">
+        <state line="20" column="57" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.14327486">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/transformation/ListOperationStepTest.java">
+    <entry file="jar://$PROJECT_DIR$/../../.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5-sources.jar!/org/springframework/transaction/support/TransactionCallback.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="50" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.2742857">
+        <state line="34" column="30" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.34795323">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/jexp/bricksandmortar/util/RestrictedKeys.java">
+    <entry file="jar://$PROJECT_DIR$/../../.m2/repository/org/springframework/spring/2.5.5/spring-2.5.5-sources.jar!/org/springframework/transaction/support/TransactionTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="64" selection-start="413" selection-end="413" vertical-scroll-proportion="0.48">
+        <state line="124" column="0" selection-start="4911" selection-end="4911" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/execution/TestStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="370" selection-end="370" vertical-scroll-proportion="0.32748538">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getValues#0;class#RestrictedKeys#0" expanded="true" />
+            <element signature="method#setFail#0;class#TestStep#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/util/TextUtilsTest.java">
+    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/transaction_test.spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="141" selection-end="141" vertical-scroll-proportion="0.13714285">
+        <state line="18" column="70" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.76510066">
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/de/jexp/bricksandmortar/transformation/ListOperationKeyTest.java">
+    <entry file="file://$PROJECT_DIR$/src/de/jexp/bricksandmortar/execution/ReportWorkflow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="73" selection-start="3456" selection-end="3456" vertical-scroll-proportion="0.4342857">
+        <state line="58" column="0" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.32748538">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getSteps#0;class#ReportWorkflow#0" expanded="true" />
+            <element signature="method#setSteps#0;class#ReportWorkflow#0" expanded="true" />
+            <element signature="method#setTransactionManager#0;class#ReportWorkflow#0" expanded="true" />
+            <element signature="method#getWorkflowContext#0;class#ReportWorkflow#0" expanded="true" />
+            <element signature="method#setBeanName#0;class#ReportWorkflow#0" expanded="true" />
+            <element signature="method#getName#0;class#ReportWorkflow#0" expanded="true" />
+            <element signature="method#getErrorMail#0;class#ReportWorkflow#0" expanded="true" />
+            <element signature="method#setErrorMail#0;class#ReportWorkflow#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
   </component>
+  <component name="ideajad">
+    <property name="annotate" value="false" />
+    <property name="annotateFully" value="false" />
+    <property name="braces" value="false" />
+    <property name="clear" value="false" />
+    <property name="confirmNavigationTriggeredDecompile" value="true" />
+    <property name="dead" value="true" />
+    <property name="defaultInitializers" value="false" />
+    <property name="dissassemblerOnly" value="false" />
+    <property name="fieldsFirst" value="true" />
+    <property name="fileExtension" value="java" />
+    <property name="fullyQualifiedNames" value="false" />
+    <property name="indentation" value="4" />
+    <property name="intRadix" value="10" />
+    <property name="lineNumbersAsComments" value="true" />
+    <property name="longRadix" value="10" />
+    <property name="maxStringLength" value="64" />
+    <property name="nocast" value="false" />
+    <property name="noclass" value="false" />
+    <property name="nocode" value="false" />
+    <property name="noconv" value="false" />
+    <property name="noctor" value="false" />
+    <property name="nodos" value="false" />
+    <property name="nofd" value="false" />
+    <property name="noinner" value="false" />
+    <property name="nolvt" value="false" />
+    <property name="nonlb" value="false" />
+    <property name="outputDirectory" value="" />
+    <property name="packFields" value="3" />
+    <property name="packImports" value="7" />
+    <property name="prefixNumericalClasses" value="_cls" />
+    <property name="prefixNumericalFields" value="_fld" />
+    <property name="prefixNumericalLocals" value="_lcl" />
+    <property name="prefixNumericalMethods" value="_mth" />
+    <property name="prefixNumericalParameters" value="_prm" />
+    <property name="prefixUnusedExceptions" value="_ex" />
+    <property name="readonly" value="false" />
+    <property name="safe" value="false" />
+    <property name="sort" value="false" />
+    <property name="spaceAfterKeyword" value="false" />
+    <property name="splitStringsAtNewline" value="false" />
+    <property name="useTabs" value="false" />
+  </component>
+  <component name="masterDetails">
+    <option name="states">
+      <map>
+        <entry key="Errors.UI">
+          <value>
+            <UIState>
+              <option name="proportions">
+                <SplitterProportionsDataImpl />
+              </option>
+            </UIState>
+          </value>
+        </entry>
+        <entry key="ScopeChooserConfigurable.UI">
+          <value>
+            <UIState>
+              <option name="proportions">
+                <SplitterProportionsDataImpl />
+              </option>
+            </UIState>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="myStates">
+      <map>
+        <entry key="Errors.UI">
+          <value>
+            <UIState>
+              <option name="proportions">
+                <SplitterProportionsDataImpl />
+              </option>
+            </UIState>
+          </value>
+        </entry>
+        <entry key="ScopeChooserConfigurable.UI">
+          <value>
+            <UIState>
+              <option name="proportions">
+                <SplitterProportionsDataImpl />
+              </option>
+            </UIState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>
       <option name="birdViewUpdateDelay" value="2000" />
-      <option name="defaultFileLocation" value="file:///Users/mh14/java/projects" />
+      <option name="defaultFileLocation" value="file://$PROJECT_DIR$/../projects" />
     </General>
     <Classdiagram>
       <option name="diagramTitleFont" value="SansSerif,1,12" />

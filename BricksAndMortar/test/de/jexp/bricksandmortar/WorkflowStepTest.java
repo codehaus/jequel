@@ -8,7 +8,7 @@ import javax.sql.DataSource;
  * Created by mh14 on 05.07.2007 21:39:33
  */
 public abstract class WorkflowStepTest<T extends WorkflowStep> extends TestCase {
-    private static DataSource dataSource;
+    private DataSource dataSource;
 
     protected T step;
 
@@ -24,9 +24,18 @@ public abstract class WorkflowStepTest<T extends WorkflowStep> extends TestCase 
         return ctx;
     }
 
-    protected DataSource getHsqlDataSource() {
+    protected DataSource getDataSource() {
         if (dataSource != null) return dataSource;
         dataSource = WorkflowStepTestUtils.createAndSetupHsqlDatasource();
         return dataSource;
+    }
+
+    @Override
+    protected void tearDown() throws Exception {
+        super.tearDown();
+        if (dataSource != null) {
+            WorkflowStepTestUtils.shutdownDataSource(dataSource);
+            dataSource = null;
+        }
     }
 }

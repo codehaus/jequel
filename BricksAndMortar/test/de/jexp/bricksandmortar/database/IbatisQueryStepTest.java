@@ -29,7 +29,7 @@ public class IbatisQueryStepTest extends WorkflowStepTest<IbatisQueryStep> {
 
     private SqlMapClient createSqlMapClientTemplate() {
         final SqlMapClientFactoryBean sqlMapClientFactoryBean = new SqlMapClientFactoryBean();
-        sqlMapClientFactoryBean.setDataSource(getHsqlDataSource());
+        sqlMapClientFactoryBean.setDataSource(getDataSource());
         sqlMapClientFactoryBean.setConfigLocation(new ClassPathResource("de/jexp/bricksandmortar/spring/test.config.xml"));
         try {
             sqlMapClientFactoryBean.afterPropertiesSet();

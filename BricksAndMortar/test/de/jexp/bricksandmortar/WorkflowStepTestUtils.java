@@ -5,12 +5,15 @@ import de.jexp.bricksandmortar.execution.ReportWorkflow;
 import junit.framework.Assert;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.jdbc.datasource.SimpleDriverDataSource;
+import org.hsqldb.jdbcDriver;
 
 import javax.sql.DataSource;
 import java.io.FileReader;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.*;
+import java.sql.DriverManager;
 
 /**
  * Created by mh14 on 06.07.2007 11:15:52
@@ -41,10 +44,11 @@ public class WorkflowStepTestUtils {
     }
 
     public static DataSource createAndSetupHsqlDatasource() {
-        final DataSource dataSource = new DriverManagerDataSource("org.hsqldb.jdbcDriver", "jdbc:hsqldb:mem:data/test", "sa", "");
-        final JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
-        jdbcTemplate.execute("create table article (name varchar(50), price numeric(5,3))");
-        jdbcTemplate.update("insert into article (name,price) values(?,?)", new Object[]{TEST_ARTICLE, TEST_PRICE_5});
+        final DataSource dataSource = new SimpleDriverDataSource(new jdbcDriver(),"jdbc:hsqldb:mem:data/test", "sa", "");
+        final JdbcTemplate template = new JdbcTemplate(dataSource);
+        template.execute("drop table article if exists");
+        template.execute("create table article (name varchar(50), price numeric(5,3))");
+        template.update("insert into article (name,price) values(?,?)", new Object[]{TEST_ARTICLE, TEST_PRICE_5});
         return dataSource;
     }
 
@@ -70,7 +74,7 @@ public class WorkflowStepTestUtils {
     }
 
     private static Map<String, Object> createTestRow(final String name, final BigDecimal price) {
-        final Map<String, Object> row = new HashMap<String, Object>(2);
+        final Map<String, Object> row = new LinkedHashMap<String, Object>(2);
         row.put(NAME, name);
         row.put(PRICE, price);
         return row;
@@ -95,5 +99,11 @@ public class WorkflowStepTestUtils {
         } finally {
             if (fileReader != null) fileReader.close();
         }
+    }
+
+    public static void shutdownDataSource(DataSource  dataSource) {
+        final JdbcTemplate template = new JdbcTemplate(dataSource);
+        template.execute("drop table article if exists");
+        template.execute("shutdown");
     }
 }

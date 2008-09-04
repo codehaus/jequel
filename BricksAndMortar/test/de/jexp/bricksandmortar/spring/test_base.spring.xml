@@ -6,6 +6,9 @@
     <bean id="namedQuery" class="de.jexp.bricksandmortar.database.NamedParameterQueryStep" abstract="true">
         <property name="dataSource" ref="testDataSource"/>
     </bean>
+    <bean id="namedUpdate" class="de.jexp.bricksandmortar.database.NamedParameterUpdateStep" abstract="true">
+        <property name="dataSource" ref="testDataSource"/>
+    </bean>
 
     <bean id="testDataSource" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
         <property name="staticMethod"

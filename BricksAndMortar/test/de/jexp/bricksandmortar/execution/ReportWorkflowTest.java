@@ -5,6 +5,8 @@ import junit.framework.TestCase;
 
 import java.util.Arrays;
 
+import org.springframework.transaction.TransactionStatus;
+
 public class ReportWorkflowTest extends TestCase {
     private ReportWorkflow reportWorkflow;
 
@@ -13,19 +15,6 @@ public class ReportWorkflowTest extends TestCase {
         final WorkflowContext workflowContext = reportWorkflow.getWorkflowContext();
         assertTrue("empty context", workflowContext.isEmpty());
         assertEquals("no steps", 0, count);
-    }
-
-    private static class TestStep implements WorkflowStep {
-        public void runStep(final WorkflowContext workflowContext) {
-            workflowContext.addResult(new StepResult<Class>(getName(), Class.class, getClass()));
-        }
-
-        public String getName() {
-            return getClass().getName();
-        }
-
-        public void setLogWriter(final StepResultWriter logWriter) {
-        }
     }
 
     public void testSingleSteps() {
@@ -47,7 +36,7 @@ public class ReportWorkflowTest extends TestCase {
     public void testException() {
         final RuntimeException runtimeException = new RuntimeException();
         final ReportWorkflow workflow = new ReportWorkflow() {
-            protected void handleException(final Throwable t) {
+            protected void handleException(final Throwable t, final TransactionStatus status) {
                 assertSame(runtimeException, t);
             }
         };
