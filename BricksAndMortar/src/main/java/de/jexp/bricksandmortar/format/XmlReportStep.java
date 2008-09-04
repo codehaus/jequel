@@ -4,11 +4,13 @@ import de.jexp.bricksandmortar.NamedWorkflowStep;
 import de.jexp.bricksandmortar.WorkflowContext;
 import de.jexp.bricksandmortar.results.ListStepResult;
 import de.jexp.bricksandmortar.results.XmlStepResult;
+import static de.jexp.bricksandmortar.util.TextUtils.*;
 import org.znerd.xmlenc.LineBreak;
 import org.znerd.xmlenc.XMLOutputter;
 
 import java.io.IOException;
 import java.io.StringWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.Collection;
 import java.util.Map;
 
@@ -30,49 +32,52 @@ public class XmlReportStep extends NamedWorkflowStep {
     protected XmlStepResult formatAsXml(final ListStepResult result) {
         try {
             final Collection<Map<String, ?>> list = result.getResult();
-            final CharSequence data = createDocument(list);
+            final CharSequence data = createDocument(result.getName(), list);
             return new XmlStepResult(getName(), data);
         } catch (IOException e) {
             throw new RuntimeException("Error creating xml document for " + result.getName(), e);
         }
     }
 
-    private CharSequence createDocument(final Collection<Map<String, ?>> list) throws IOException {
+    private CharSequence createDocument(final String name, final Collection<Map<String, ?>> list) throws IOException {
+        XMLOutputter xml = createOutputter();
+        xml.startTag("rows");
+        xml.attribute("name", name);
+        formatRows(xml, list);
+        xml.endDocument();
+        return ((StringWriter) xml.getWriter()).getBuffer();
+    }
+
+    private void formatRows(final XMLOutputter xml, final Collection<Map<String, ?>> list) throws IOException {
+        for (Map<String, ?> row : list) {
+            formatRow(xml, row);
+        }
+    }
+
+    private XMLOutputter createOutputter() throws UnsupportedEncodingException {
         final StringWriter stringWriter = new StringWriter();
         XMLOutputter xml = new XMLOutputter(stringWriter, "UTF-8");
         if (lineBreak != null)
             xml.setLineBreak(lineBreak);
         if (identation != null)
             xml.setIndentation(" ");
-        xml.startTag("result");
-        for (Map<String, ?> row : list) {
-            formatRow(xml, row);
-        }
-        xml.endDocument();
-        return stringWriter.getBuffer();
+        return xml;
     }
 
     private void formatRow(final XMLOutputter xml, final Map<String, ?> row) throws IOException {
         xml.startTag("row");
         for (Map.Entry<String, ?> entry : row.entrySet()) {
+            final String name = formatName(entry.getKey());
+            final String valueString = formatValue(entry.getValue());
             if (elements) {
-                xml.startTag(formatName(entry));
-                xml.pcdata(formatValue(entry));
+                xml.startTag(name);
+                xml.pcdata(valueString);
                 xml.endTag();
             } else {
-                xml.attribute(formatName(entry), formatValue(entry));
+                xml.attribute(name, valueString);
             }
         }
         xml.endTag();
-    }
-
-    private String formatName(final Map.Entry<String, ?> entry) {
-        return entry.getKey().toLowerCase();
-    }
-
-    private String formatValue(final Map.Entry<String, ?> entry) {
-        final Object value = entry.getValue();
-        return value == null ? "" : value.toString();
     }
 
     public void setElements(final boolean elements) {

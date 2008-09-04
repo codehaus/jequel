@@ -1,6 +1,9 @@
 package de.jexp.bricksandmortar.util;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * Created by mh14 on 06.07.2007 12:45:37
@@ -10,7 +13,7 @@ public class TextUtils {
     public static final String NEWLINE = System.getProperty("line.separator");
 
     public static Collection<String> makeTitles(final Collection<String> titles) {
-        final Collection<String> result=new ArrayList<String>(titles.size());
+        final Collection<String> result = new ArrayList<String>(titles.size());
         for (final String title : titles) {
             result.add(title.toUpperCase());
         }
@@ -40,24 +43,32 @@ public class TextUtils {
     }
 
     public static StringBuilder createText(final Collection<Map<String, ?>> list) {
-        final StringBuilder sb=new StringBuilder(list.size()*30);
-        boolean header=false;
-        for (final Map<String,?> row : list) {
+        final StringBuilder sb = new StringBuilder(list.size() * 30);
+        boolean header = false;
+        for (final Map<String, ?> row : list) {
             if (!header) {
                 header = true;
                 createLine(sb, makeTitles(row.keySet()));
             }
-            createLine(sb,row.values());
+            createLine(sb, row.values());
 
         }
         return sb;
     }
 
     public static CharSequence createText(final CharSequence text, final String header, final String footer) {
-        final StringBuilder sb=new StringBuilder();
-        if (header!=null) sb.append(header).append(NEWLINE);
-        if (text!=null) sb.append(text);
-        if (footer!=null) sb.append(NEWLINE).append(footer);
+        final StringBuilder sb = new StringBuilder();
+        if (header != null) sb.append(header).append(NEWLINE);
+        if (text != null) sb.append(text);
+        if (footer != null) sb.append(NEWLINE).append(footer);
         return sb;
+    }
+
+    public static String formatName(final String name) {
+        return name.toLowerCase();
+    }
+
+    public static String formatValue(final Object value) {
+        return value == null ? "" : value.toString();
     }
 }

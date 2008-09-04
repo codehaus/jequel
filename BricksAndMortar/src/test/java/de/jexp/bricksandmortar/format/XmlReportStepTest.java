@@ -17,7 +17,7 @@ public class XmlReportStepTest extends WorkflowStepTest<XmlReportStep> {
     public void testAttributesStep() {
         step.runStep(ctx);
         final XmlStepResult result = ctx.getResult(STEP_NAME);
-        assertEquals("xml step ", "<result><row name=\"TestArticle\" price=\"5.00\"/></result>", result.getResult().toString());
+        assertEquals("xml step ", "<rows name=\"result\"><row name=\"TestArticle\" price=\"5.00\"/></rows>", result.getResult().toString());
     }
 
     public void testAttributesStepLineBreak() {
@@ -26,9 +26,9 @@ public class XmlReportStepTest extends WorkflowStepTest<XmlReportStep> {
         step.runStep(ctx);
         final XmlStepResult result = ctx.getResult(STEP_NAME);
         assertEquals("xml step ",
-                "<result>\n" +
+                "<rows name=\"result\">\n" +
                         " <row name=\"TestArticle\" price=\"5.00\"/>\n" +
-                        "</result>",
+                        "</rows>",
                 result.getResult().toString());
     }
 
@@ -36,7 +36,7 @@ public class XmlReportStepTest extends WorkflowStepTest<XmlReportStep> {
         step.setElements(true);
         step.runStep(ctx);
         final XmlStepResult result = ctx.getResult(STEP_NAME);
-        assertEquals("xml step ", "<result><row><name>TestArticle</name><price>5.00</price></row></result>", result.getResult().toString());
+        assertEquals("xml step ", "<rows name=\"result\"><row><name>TestArticle</name><price>5.00</price></row></rows>", result.getResult().toString());
     }
 
     protected void setUp() {

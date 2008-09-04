@@ -19,11 +19,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/XmlReportStepTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/results/XmlStepResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/XmlReportStepTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/XmlReportStepTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/XmlReportStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/XmlReportStep.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BricksAndMortar.iws" afterPath="$PROJECT_DIR$/BricksAndMortar.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/XmlReportStep.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/util/TextUtils.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/util/TextUtils.java" />
     </list>
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
@@ -115,10 +114,11 @@
       <file leaf-file-name="XmlReportStep.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/XmlReportStep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="57" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.7368421">
+            <state line="43" column="26" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.75438595">
               <folding>
-                <marker date="1220564452000" expanded="true" signature="48:429" placeholder="..." />
+                <element signature="imports" expanded="true" />
                 <element signature="method#setElements#0;class#XmlReportStep#0" expanded="true" />
+                <element signature="method#setLineBreak#0;class#XmlReportStep#0" expanded="true" />
                 <element signature="method#setIdentation#0;class#XmlReportStep#0" expanded="true" />
               </folding>
             </state>
@@ -141,7 +141,7 @@
       <file leaf-file-name="XmlReportStepTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/XmlReportStepTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="16" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.9005848">
+            <state line="38" column="35" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.83625734">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,8 +152,14 @@
       <file leaf-file-name="TextUtils.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/util/TextUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="33" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.31092438">
-              <folding />
+            <state line="38" column="5" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.31092438">
+              <folding>
+                <marker date="1220565087000" expanded="true" signature="720:789" placeholder="{...}" />
+                <marker date="1220565087000" expanded="true" signature="874:1115" placeholder="{...}" />
+                <marker date="1220565087000" expanded="true" signature="1168:1199" placeholder="{...}" />
+                <marker date="1220565087000" expanded="true" signature="1256:1291" placeholder="{...}" />
+                <marker date="1220565087000" expanded="true" signature="1375:1734" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1196,11 +1202,11 @@
       <recent name="de.jexp.BricksAndMortar" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="de.jexp.bricksandmortar.util.TextUtils" />
       <recent name="de.jexp.bricksandmortar.util.RestrictedKeyMapKey" />
       <recent name="de.jexp.BricksAndMortar.util.TextUtils" />
       <recent name="de.jexp.BricksAndMortar.AlexaTestutils" />
       <recent name="de.jexp.BricksAndMortar.WorkflowStepTestUtils" />
-      <recent name="WorkflowStepTestUtils" />
     </key>
     <key name="IntroduceConstantDialog.RECENTS_KEY">
       <recent name="" />
@@ -1401,10 +1407,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32200646" order="8" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" order="7" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" order="1" />
       <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" order="3" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29042906" order="0" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29042906" order="0" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24834983" order="2" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39873418" order="6" />
@@ -1434,7 +1440,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="XML Step" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed xml representation to &lt;rows name=&quot;sourceResultName&quot;&gt;...&#10;moved formatting to TextUtils" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -1447,6 +1453,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="maven directory structure&#10;velocity text step" />
     <MESSAGE value="XML Step" />
+    <MESSAGE value="changed xml representation to &lt;rows name=&quot;sourceResultName&quot;&gt;...&#10;moved formatting to TextUtils" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1669,8 +1676,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/util/TextUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="33" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.31092438">
-          <folding />
+        <state line="38" column="5" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.31092438">
+          <folding>
+            <marker date="1220565087000" expanded="true" signature="720:789" placeholder="{...}" />
+            <marker date="1220565087000" expanded="true" signature="874:1115" placeholder="{...}" />
+            <marker date="1220565087000" expanded="true" signature="1168:1199" placeholder="{...}" />
+            <marker date="1220565087000" expanded="true" signature="1256:1291" placeholder="{...}" />
+            <marker date="1220565087000" expanded="true" signature="1375:1734" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1694,10 +1707,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/XmlReportStep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="57" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.7368421">
+        <state line="43" column="26" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.75438595">
           <folding>
-            <marker date="1220564452000" expanded="true" signature="48:429" placeholder="..." />
+            <element signature="imports" expanded="true" />
             <element signature="method#setElements#0;class#XmlReportStep#0" expanded="true" />
+            <element signature="method#setLineBreak#0;class#XmlReportStep#0" expanded="true" />
             <element signature="method#setIdentation#0;class#XmlReportStep#0" expanded="true" />
           </folding>
         </state>
@@ -1705,7 +1719,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/XmlReportStepTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="16" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.9005848">
+        <state line="38" column="35" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.83625734">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
