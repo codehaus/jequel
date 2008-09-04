@@ -11,10 +11,10 @@ package de.jexp.bricksandmortar;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.mail.MailSendException;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.io.File;
+import java.util.*;
 
 public class WorkflowContext {
     protected final Log logger = LogFactory.getLog(getClass());
@@ -22,7 +22,7 @@ public class WorkflowContext {
     private final Map<String, StepResult<?>> values = new HashMap<String, StepResult<?>>(10);
     private String directory;
     private boolean logResults;
-
+    private final Collection<String> skipSteps=new HashSet<String>();
     public WorkflowContext() {
     }
 
@@ -67,5 +67,16 @@ public class WorkflowContext {
     public File getDirectoryFile() {
         final String directory = getDirectory();
         return directory!=null ? new File(directory) : new File(".");
+    }
+    public void addSkipSteps(final String...stepNames) {
+        if (stepNames==null) return;
+        skipSteps.addAll(Arrays.asList(stepNames));
+    }
+    public boolean skipStep(final String stepName) {
+        return skipSteps.contains(stepName);
+    }
+
+    public Collection<String> getResultNames() {
+        return values.keySet();
     }
 }

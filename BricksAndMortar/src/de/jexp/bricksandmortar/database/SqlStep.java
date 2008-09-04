@@ -17,6 +17,7 @@ public abstract class SqlStep<T extends StepResult<?>> extends NamedWorkflowStep
     private String query;
     private Map<String, ?> queryParams;
     private boolean execute=true;
+    private String[] skipStepNames;
 
     public void setQueryParams(final Map<String, ?> queryParams) {
         this.queryParams = queryParams;
@@ -46,7 +47,7 @@ public abstract class SqlStep<T extends StepResult<?>> extends NamedWorkflowStep
         final Collection<Map<String, ?>> result = new LinkedList<Map<String, ?>>();
         if (getQueryParams() != null) result.add(getQueryParams());
         else {
-            if (getParamNames() != null) {
+            if (hasParamNames()) {
                 for (final String paramName : getParamNames()) {
                     final ListStepResult params = workflowContext.getResult(paramName);
                     if (params == null) continue;
@@ -61,6 +62,10 @@ public abstract class SqlStep<T extends StepResult<?>> extends NamedWorkflowStep
         return result;
     }
 
+    private boolean hasParamNames() {
+        return getParamNames() != null;
+    }
+
     public void runStep(final WorkflowContext workflowContext) {
         if (!validConfig()) return;
         final Collection<Map<String, ?>> resolvedParams = resolveParams(workflowContext);
@@ -72,7 +77,7 @@ public abstract class SqlStep<T extends StepResult<?>> extends NamedWorkflowStep
     }
 
     protected void executeQueries(final WorkflowContext workflowContext, final Collection<Map<String, ?>> resolvedParams) {
-        if (resolvedParams.isEmpty()) {
+        if (resolvedParams.isEmpty() && !hasParamNames()) {
             final T result = execute(null, 0);
             setOnWorkflowContext(workflowContext, result);
         }
@@ -85,6 +90,13 @@ public abstract class SqlStep<T extends StepResult<?>> extends NamedWorkflowStep
         }
     }
 
+    protected void setOnWorkflowContext(final WorkflowContext ctx, final String name, final StepResult<?> result) {
+        super.setOnWorkflowContext(ctx, name, result);
+        if (result.isEmpty()) {
+            ctx.addSkipSteps(getSkipIfNoResult());
+        }
+    }
+
     protected boolean validConfig() {
         return true;
     }
@@ -94,5 +106,13 @@ public abstract class SqlStep<T extends StepResult<?>> extends NamedWorkflowStep
     protected String createResultName(final int count) {
         if (count == 0) return getName();
         return getName() + count;
+    }
+
+    public void setSkipIfNoResult(String...stepNames) {
+        this.skipStepNames=trimAndFilterNames(stepNames);
+    }
+
+    public String[] getSkipIfNoResult() {
+        return skipStepNames;
     }
 }

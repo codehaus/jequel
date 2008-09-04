@@ -16,20 +16,18 @@ import de.jexp.bricksandmortar.output.LogStepResultWriter;
 import de.jexp.bricksandmortar.results.ErrorStepResult;
 import de.jexp.bricksandmortar.results.TextStepResult;
 import org.springframework.beans.factory.BeanNameAware;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionStatus;
-import org.springframework.transaction.support.TransactionTemplate;
 import org.springframework.transaction.support.TransactionCallback;
+import org.springframework.transaction.support.TransactionTemplate;
 
-import javax.annotation.Resource;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
-public class ReportWorkflow implements BeanNameAware {
+public class ReportWorkflow extends WorkflowRunner implements BeanNameAware {
     private List<? extends WorkflowStep> steps = Collections.emptyList();
     private final WorkflowContext workflowContext;
     private String name;
@@ -54,7 +52,7 @@ public class ReportWorkflow implements BeanNameAware {
     }
 
     public int runWorkflow() {
-        if (transactionManager==null) return doRunWorkflow(null);
+        if (transactionManager == null) return doRunWorkflow(null);
 
         final TransactionTemplate template = new TransactionTemplate(transactionManager);
         return (Integer) template.execute(new TransactionCallback() {
@@ -68,23 +66,24 @@ public class ReportWorkflow implements BeanNameAware {
         int successCount = 0;
         for (final WorkflowStep step : steps) {
             try {
-                runStep(step);
+                runStep(step, workflowContext);
                 successCount++;
             } catch (final Throwable t) {
-                handleException(t,status);
+                handleException(t, step, status);
                 break;
             }
         }
         return successCount;
     }
 
-    protected void handleException(final Throwable t, final TransactionStatus status) {
-        if (status!=null) status.setRollbackOnly();
-        t.printStackTrace();
+    protected void handleException(final Throwable t, final WorkflowStep step, final TransactionStatus status) {
+        if (status != null) status.setRollbackOnly();
+        if (log.isErrorEnabled())
+            log.error("Error running step "+step.getName(),t);
         final SendMailStep errorMailSender = getErrorMail();
         if (errorMailSender != null) {
             final ErrorStepResult error = new ErrorStepResult(getName(), t);
-            final TextStepResult errorText = new TextStepResult("Error executing workflow "+getName(),error.textify());
+            final TextStepResult errorText = new TextStepResult("Error", error.textify(), "Error executing workflow " + getName() + " Step " + step.getName(), workflowContext.getResultNames().toString());
             errorMailSender.sendTextMessage(Arrays.asList(errorText));
         }
     }

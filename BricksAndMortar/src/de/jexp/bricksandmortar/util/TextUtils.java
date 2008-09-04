@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class TextUtils {
     public static final char TAB = '\t';
-    public static final char NEWLINE = '\n';
+    public static final char NEWLINE = (char)Character.LINE_SEPARATOR;
 
     public static Collection<String> makeTitles(final Collection<String> titles) {
         final Collection<String> result=new ArrayList<String>(titles.size());
@@ -50,6 +50,14 @@ public class TextUtils {
             createLine(sb,row.values());
 
         }
+        return sb;
+    }
+
+    public static CharSequence createText(final CharSequence text, final String header, final String footer) {
+        final StringBuilder sb=new StringBuilder();
+        if (header!=null) sb.append(header).append(NEWLINE);
+        if (text!=null) sb.append(text);
+        if (footer!=null) sb.append(NEWLINE).append(footer);
         return sb;
     }
 }

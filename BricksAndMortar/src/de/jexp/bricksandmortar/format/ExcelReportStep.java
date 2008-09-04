@@ -27,9 +27,10 @@ public class ExcelReportStep extends NamedWorkflowStep {
         boolean first=true;
         for (final String paramName : getParamNames()) {
             final ListStepResult result = workflowContext.getResult(paramName);
+            if (result==null) continue;
             // todo consistent handling of result names
-            final String resultName = first ? getName() : paramName+".xls";
-            setOnWorkflowContext(workflowContext, processResult(result, resultName));
+            final String resultName = first ? getName() : paramName+"Excel";
+            setOnWorkflowContext(workflowContext, resultName, processResult(result, resultName));
             first=false;
         }
     }

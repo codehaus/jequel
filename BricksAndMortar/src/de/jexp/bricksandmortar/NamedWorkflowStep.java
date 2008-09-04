@@ -1,14 +1,13 @@
 package de.jexp.bricksandmortar;
 
-import org.springframework.beans.factory.BeanNameAware;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.BeanNameAware;
 
 import java.io.IOException;
-import java.util.Collection;
 import java.util.ArrayList;
-
-import de.jexp.bricksandmortar.output.LogStepResultWriter;
+import java.util.Arrays;
+import java.util.Collection;
 
 /**
  * Created by mh14 on 06.07.2007 11:08:22
@@ -46,13 +45,13 @@ public abstract class NamedWorkflowStep implements WorkflowStep, BeanNameAware {
     }
 
     private void logResults(final WorkflowContext ctx, final String name) {
-        if (logWriter==null)  return;
-        if (isLogResults() || ctx.isLogResults()) {
-            try {
-                logWriter.writeFile(name, 0);
-            } catch (IOException ioe) {
-                if(logger.isErrorEnabled()) logger.error("Error writing File ",ioe);
-            }
+        if (logWriter == null) return;
+        if (isLogResults()!=null && !isLogResults()) return;
+        if (!ctx.isLogResults()) return;
+        try {
+            logWriter.writeFile(name, 0);
+        } catch (IOException ioe) {
+            if (logger.isErrorEnabled()) logger.error("Error writing File ", ioe);
         }
     }
 
@@ -60,18 +59,18 @@ public abstract class NamedWorkflowStep implements WorkflowStep, BeanNameAware {
         return getClass().getSimpleName()+":"+getName();
     }
 
-    boolean logResults;
+    Boolean logResults;
 
-    public boolean isLogResults() {
+    public Boolean isLogResults() {
         return logResults;
     }
 
-    public void setLogResults(final boolean logResults) {
+    public void setLogResults(final Boolean logResults) {
         this.logResults = logResults;
     }
 
     public void setParamName(final String paramName) {
-        this.paramNames=new String[]{paramName};
+        setParamNames(paramName);
     }
 
     public String getParamName() {
@@ -83,7 +82,16 @@ public abstract class NamedWorkflowStep implements WorkflowStep, BeanNameAware {
     }
 
     public void setParamNames(final String...paramNames) {
-        this.paramNames = paramNames;
+        this.paramNames = trimAndFilterNames(paramNames);
+    }
+
+    protected String[] trimAndFilterNames(final String[] paramNames) {
+        if (paramNames==null) return null;
+        final Collection<String> names=new ArrayList<String>(paramNames.length);
+        for (final String paramName : paramNames) {
+            if (paramName!=null) names.add(paramName.trim());
+        }
+        return names.toArray(new String[names.size()]);
     }
 
     protected <T extends StepResult<?>> Collection<T> filterParams(final WorkflowContext workflowContext, final String[] paramNames, final Class<T> resultType) {
@@ -94,5 +102,4 @@ public abstract class NamedWorkflowStep implements WorkflowStep, BeanNameAware {
         }
         return results;
     }
-
 }

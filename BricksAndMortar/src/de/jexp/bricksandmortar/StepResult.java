@@ -41,4 +41,8 @@ public class StepResult<T> {
     public CharSequence textify() {
         return "StepResult: "+getName()+" / "+getResultType().getSimpleName();
     }
+
+    public boolean isEmpty() {
+        return false;
+    }
 }

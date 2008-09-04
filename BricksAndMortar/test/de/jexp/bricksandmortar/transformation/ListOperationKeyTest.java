@@ -23,7 +23,7 @@ public class ListOperationKeyTest extends TestCase {
 
 
     public void testTranspose() {
-        final ListStepResult result = ListOperation.TRANSPOSE.perform(sources);
+        final ListStepResult result = ListOperation.TRANSPOSE.perform(sources, true);
         final Collection<Map<String,?>> rows = result.getResult();
         System.out.println("rows = " + rows);
         assertEquals(1,rows.size());
@@ -33,7 +33,7 @@ public class ListOperationKeyTest extends TestCase {
     }
 
     public void testTransposeKey() {
-        final ListStepResult result = ListOperation.TRANSPOSE.perform(sources, NAME);
+        final ListStepResult result = ListOperation.TRANSPOSE.perform(sources, true, NAME);
         final Collection<Map<String,?>> rows = result.getResult();
         System.out.println("rows = " + rows);
         assertEquals(1,rows.size());
@@ -46,7 +46,7 @@ public class ListOperationKeyTest extends TestCase {
         final List<ListStepResult> sources = Arrays.asList(
                 new ListStepResult(TEST_LIST_NAME2, WorkflowStepTestUtils.getDefaultArticleTestDataList2()),
                 new ListStepResult(TEST_LIST_NAME, WorkflowStepTestUtils.getDefaultArticleTestDataList()));
-        final ListStepResult result = ListOperation.DIFFERENCE.perform(sources);
+        final ListStepResult result = ListOperation.DIFFERENCE.perform(sources,true);
         final Collection<Map<String,?>> rows = result.getResult();
         System.out.println("rows = " + rows);
         assertEquals(1,rows.size());
@@ -60,7 +60,38 @@ public class ListOperationKeyTest extends TestCase {
                 new ListStepResult(TEST_LIST_NAME2, WorkflowStepTestUtils.getDefaultArticleTestDataList2()),
                 new ListStepResult(TEST_LIST_NAME, WorkflowStepTestUtils.getDefaultArticleTestDataList()));
         System.out.println("sources = " + sources);
-        final ListStepResult result = ListOperation.DIFFERENCE.perform(sources,PRICE);
+        final ListStepResult result = ListOperation.DIFFERENCE.perform(sources,true,PRICE);
+        final Collection<Map<String,?>> rows = result.getResult();
+        System.out.println("rows = " + rows);
+        assertEquals(1,rows.size());
+        final Map<String, ?> row = rows.iterator().next();
+        assertEquals(2, row.size());
+        assertEquals(WorkflowStepTestUtils.TEST_PRICE_10, row.get(PRICE));
+    }
+
+    public void testDifferenceKeyPriceDoubleEntries() {
+        List<Map<String, ?>> firstList = WorkflowStepTestUtils.getDefaultArticleTestDataList2();
+        firstList.addAll(firstList);
+        final List<ListStepResult> sources = Arrays.asList(
+                new ListStepResult(TEST_LIST_NAME2, firstList),
+                new ListStepResult(TEST_LIST_NAME, WorkflowStepTestUtils.getDefaultArticleTestDataList()));
+        System.out.println("sources = " + sources);
+        final ListStepResult result = ListOperation.DIFFERENCE.perform(sources,false,PRICE);
+        final Collection<Map<String,?>> rows = result.getResult();
+        System.out.println("rows = " + rows);
+        assertEquals(2,rows.size());
+        for (Map<String, ?> row : rows) {
+            assertEquals(2, row.size());
+            assertEquals(WorkflowStepTestUtils.TEST_PRICE_10, row.get(PRICE));
+        }
+    }
+
+    public void testDifferenceKeyPriceNonDistinct() {
+        final List<ListStepResult> sources = Arrays.asList(
+                new ListStepResult(TEST_LIST_NAME2, WorkflowStepTestUtils.getDefaultArticleTestDataList2()),
+                new ListStepResult(TEST_LIST_NAME, WorkflowStepTestUtils.getDefaultArticleTestDataList()));
+        System.out.println("sources = " + sources);
+        final ListStepResult result = ListOperation.DIFFERENCE.perform(sources,false,PRICE);
         final Collection<Map<String,?>> rows = result.getResult();
         System.out.println("rows = " + rows);
         assertEquals(1,rows.size());
@@ -73,7 +104,7 @@ public class ListOperationKeyTest extends TestCase {
         final List<ListStepResult> sources = Arrays.asList(
                 new ListStepResult(TEST_LIST_NAME2, WorkflowStepTestUtils.getDefaultArticleTestDataList2()),
                 new ListStepResult(TEST_LIST_NAME, WorkflowStepTestUtils.getDefaultArticleTestDataList()));
-        final ListStepResult result = ListOperation.UNION.perform(sources);
+        final ListStepResult result = ListOperation.UNION.perform(sources,true);
         final Collection<Map<String,?>> rows = result.getResult();
         System.out.println("rows = " + rows);
         assertEquals(2,rows.size());
@@ -86,7 +117,7 @@ public class ListOperationKeyTest extends TestCase {
         final List<ListStepResult> sources = Arrays.asList(
                 new ListStepResult(TEST_LIST_NAME2, WorkflowStepTestUtils.getDefaultArticleTestDataList2()),
                 new ListStepResult(TEST_LIST_NAME, WorkflowStepTestUtils.getDefaultArticleTestDataList()));
-        final ListStepResult result = ListOperation.UNION.perform(sources,PRICE);
+        final ListStepResult result = ListOperation.UNION.perform(sources,true, PRICE);
         final Collection<Map<String,?>> rows = result.getResult();
         System.out.println("rows = " + rows);
         assertEquals(2,rows.size());
@@ -97,7 +128,7 @@ public class ListOperationKeyTest extends TestCase {
         final List<ListStepResult> sources = Arrays.asList(
                 new ListStepResult(TEST_LIST_NAME2, WorkflowStepTestUtils.getDefaultArticleTestDataList2()),
                 new ListStepResult(TEST_LIST_NAME, WorkflowStepTestUtils.getDefaultArticleTestDataList()));
-        final ListStepResult result = ListOperation.INTERSECTION.perform(sources);
+        final ListStepResult result = ListOperation.INTERSECTION.perform(sources,true);
         final Collection<Map<String,?>> rows = result.getResult();
         System.out.println("rows = " + rows);
         assertEquals(1,rows.size());
@@ -110,7 +141,7 @@ public class ListOperationKeyTest extends TestCase {
         final List<ListStepResult> sources = Arrays.asList(
                 new ListStepResult(TEST_LIST_NAME2, WorkflowStepTestUtils.getDefaultArticleTestDataList2()),
                 new ListStepResult(TEST_LIST_NAME, WorkflowStepTestUtils.getDefaultArticleTestDataList()));
-        final ListStepResult result = ListOperation.INTERSECTION.perform(sources,PRICE);
+        final ListStepResult result = ListOperation.INTERSECTION.perform(sources,true,PRICE);
         final Collection<Map<String,?>> rows = result.getResult();
         System.out.println("rows = " + rows);
         assertEquals(1,rows.size());

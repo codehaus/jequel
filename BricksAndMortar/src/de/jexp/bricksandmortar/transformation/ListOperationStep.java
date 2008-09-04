@@ -15,7 +15,7 @@ import java.util.Collection;
 public class ListOperationStep extends NamedWorkflowStep {
     private String[] keys;
     private ListOperation operation = ListOperation.NOOP;
-
+    private boolean distinct;
     public void runStep(final WorkflowContext workflowContext) {
         final Collection<ListStepResult> sources = filterParams(workflowContext,getParamNames(), ListStepResult.class);
         final ListStepResult result = performOperation(sources);
@@ -25,7 +25,7 @@ public class ListOperationStep extends NamedWorkflowStep {
     private ListStepResult performOperation(final Collection<ListStepResult> sources) {
         if (logger.isInfoEnabled())
             logger.info("Executing operation " + operation + " on " + Arrays.asList(getParamNames()));
-        return operation.perform(sources,keys);
+        return operation.perform(sources,distinct, keys);
     }
 
     public ListOperation getOperation() {
@@ -42,6 +42,14 @@ public class ListOperationStep extends NamedWorkflowStep {
 
     public void setKeys(final String[] keys) {
         this.keys = keys;
+    }
+
+    public boolean isDistinct() {
+        return distinct;
+    }
+
+    public void setDistinct(final boolean distinct) {
+        this.distinct = distinct;
     }
 }
 

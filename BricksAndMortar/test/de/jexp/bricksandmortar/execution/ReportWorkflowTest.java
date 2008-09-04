@@ -36,7 +36,8 @@ public class ReportWorkflowTest extends TestCase {
     public void testException() {
         final RuntimeException runtimeException = new RuntimeException();
         final ReportWorkflow workflow = new ReportWorkflow() {
-            protected void handleException(final Throwable t, final TransactionStatus status) {
+            @Override
+            protected void handleException(final Throwable t, final WorkflowStep step,final TransactionStatus status) {
                 assertSame(runtimeException, t);
             }
         };

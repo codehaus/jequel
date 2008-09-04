@@ -13,7 +13,7 @@ public class TextUtilsTest extends TestCase {
     public void testCreateLine() {
         final StringBuilder sb = new StringBuilder();
         TextUtils.createLine(sb, Arrays.asList("a", "b", "c"));
-        assertEquals("createLine a b c", "a\tb\tc\n", sb.toString());
+        assertEquals("createLine a b c", "a\tb\tc"+TextUtils.NEWLINE, sb.toString());
     }
 
     public void testMakeTitles() {
