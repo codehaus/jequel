@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class TextUtils {
     public static final char TAB = '\t';
-    public static final char NEWLINE = (char)Character.LINE_SEPARATOR;
+    public static final String NEWLINE = System.getProperty("line.separator");
 
     public static Collection<String> makeTitles(final Collection<String> titles) {
         final Collection<String> result=new ArrayList<String>(titles.size());

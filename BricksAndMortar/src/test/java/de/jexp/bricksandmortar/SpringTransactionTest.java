@@ -11,7 +11,7 @@ import javax.sql.DataSource;
 public class SpringTransactionTest extends TestCase {
     public void testTransactionCommit() {
         final ClassPathXmlApplicationContext ctx =
-                new ClassPathXmlApplicationContext("de/jexp/bricksandmortar/spring/transaction_test.spring.xml");
+                new ClassPathXmlApplicationContext("/de/jexp/bricksandmortar/spring/transaction_test.spring.xml");
         final ReportWorkflow simpleReadWorkflow = (ReportWorkflow) ctx.getBean("workflow");
         simpleReadWorkflow.runWorkflow();
         final DataSource dataSource = (DataSource) ctx.getBean("testDataSource");
@@ -24,7 +24,7 @@ public class SpringTransactionTest extends TestCase {
 
     public void testTransactionFail() {
         final ClassPathXmlApplicationContext ctx =
-                new ClassPathXmlApplicationContext("de/jexp/bricksandmortar/spring/transaction_test.spring.xml");
+                new ClassPathXmlApplicationContext("/de/jexp/bricksandmortar/spring/transaction_test.spring.xml");
         final TestStep testStep = (TestStep) ctx.getBean("testStep");
         testStep.setFail(true);
         final ReportWorkflow simpleReadWorkflow = (ReportWorkflow) ctx.getBean("workflow");

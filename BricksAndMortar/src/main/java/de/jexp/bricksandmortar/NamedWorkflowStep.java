@@ -5,9 +5,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.BeanNameAware;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
+import java.util.*;
 
 /**
  * Created by mh14 on 06.07.2007 11:08:22
@@ -94,11 +92,12 @@ public abstract class NamedWorkflowStep implements WorkflowStep, BeanNameAware {
         return names.toArray(new String[names.size()]);
     }
 
-    protected <T extends StepResult<?>> Collection<T> filterParams(final WorkflowContext workflowContext, final String[] paramNames, final Class<T> resultType) {
-        final Collection<T> results = new ArrayList<T>(paramNames.length);
+    @SuppressWarnings({"unchecked"})
+    protected <T extends StepResult<?>> Map<String,T> filterParams(final WorkflowContext workflowContext, final String[] paramNames, final Class<T> resultType) {
+        final Map<String,T> results = new LinkedHashMap<String,T>(paramNames.length);
         for (final String paramName : paramNames) {
             final StepResult<?> result = workflowContext.getResult(paramName);
-            if (resultType.isInstance(result)) results.add((T) result);
+            if (resultType.isInstance(result)) results.put(paramName, (T) result);
         }
         return results;
     }

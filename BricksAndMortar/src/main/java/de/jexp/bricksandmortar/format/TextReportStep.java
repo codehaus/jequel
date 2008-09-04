@@ -15,7 +15,7 @@ public class TextReportStep extends NamedWorkflowStep {
     private String header;
     private String footer;
     public void runStep(final WorkflowContext workflowContext) {
-        final Collection<ListStepResult> listStepResults = filterParams(workflowContext, getParamNames(), ListStepResult.class);
+        final Collection<ListStepResult> listStepResults = filterParams(workflowContext, getParamNames(), ListStepResult.class).values();
         for (ListStepResult listStepResult : listStepResults) {
             setOnWorkflowContext(workflowContext, formatAsText(listStepResult));
         }

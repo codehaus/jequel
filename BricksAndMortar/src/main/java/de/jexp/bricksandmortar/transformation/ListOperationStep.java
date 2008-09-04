@@ -5,8 +5,6 @@ import de.jexp.bricksandmortar.NamedWorkflowStep;
 import de.jexp.bricksandmortar.WorkflowContext;
 
 import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Collection;
 
 /**
@@ -17,7 +15,7 @@ public class ListOperationStep extends NamedWorkflowStep {
     private ListOperation operation = ListOperation.NOOP;
     private boolean distinct;
     public void runStep(final WorkflowContext workflowContext) {
-        final Collection<ListStepResult> sources = filterParams(workflowContext,getParamNames(), ListStepResult.class);
+        final Collection<ListStepResult> sources = filterParams(workflowContext, getParamNames(), ListStepResult.class).values();
         final ListStepResult result = performOperation(sources);
         setOnWorkflowContext(workflowContext, result);
     }

@@ -31,8 +31,8 @@ public class SendMailStep extends NamedWorkflowStep {
     }
 
     public void runStep(final WorkflowContext workflowContext) {
-        final Collection<FileStepResult> filesToSend = filterParams(workflowContext, getParamNames(), FileStepResult.class);
-        final Collection<TextStepResult> textsToSend = filterParams(workflowContext, getParamNames(), TextStepResult.class);
+        final Collection<FileStepResult> filesToSend = filterParams(workflowContext, getParamNames(), FileStepResult.class).values();
+        final Collection<TextStepResult> textsToSend = filterParams(workflowContext, getParamNames(), TextStepResult.class).values();
         if (filesToSend.isEmpty()) {
             sendTextMessage(textsToSend);
         } else {
