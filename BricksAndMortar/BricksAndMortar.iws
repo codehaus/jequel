@@ -19,129 +19,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/execution/ReportWorkflowTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/execution/ReportWorkflowTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/de/jexp/bricksandmortar/spring/transaction_test.spring.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/springframework/jdbc/core" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/jdbc/core" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp" afterPath="$PROJECT_DIR$/src/test/java/de/jexp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/util/TextUtils.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/util/TextUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/WorkflowStepTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/WorkflowStepTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/mail" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/mail" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/execution/WorkflowRunner.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/execution/WorkflowRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/database/IbatisQueryStepTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/database/IbatisQueryStepTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/database/NamedParameterUpdateStepTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/database/NamedParameterUpdateStepTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/transformation" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/transformation" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BricksAndMortar.ipr" afterPath="$PROJECT_DIR$/BricksAndMortar.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/SimpleSpringTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/SimpleSpringTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/test.config.xml" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/spring/test.config.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/results/TextStepResult.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/results/TextStepResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/de/jexp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/results/ErrorStepResult.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/results/ErrorStepResult.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp" afterPath="$PROJECT_DIR$/src/main/java/de/jexp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/util/TextUtilsTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/util/TextUtilsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de" afterPath="$PROJECT_DIR$/src/main/java/de" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/format/ExcelReportStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/ExcelReportStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/sql" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/spring/sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/util" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/util" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/spring/transaction_test.spring.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/output/WriteTextStepTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/output/WriteTextStepTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/SpringTransactionTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/SpringTransactionTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/results/UpdateStepResult.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/results/UpdateStepResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/XmlReportStepTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/results/XmlStepResult.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/transformation/ListOperationStepTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/transformation/ListOperationStepTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/spring/sql/test.sql.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/output/FileStepResultWriter.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/output/FileStepResultWriter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/WorkflowStepNameTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/WorkflowStepNameTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/simple_read.spring.xml" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/spring/simple_read.spring.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/de/jexp/bricksandmortar/spring/sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/database/SqlCallStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/database/SqlCallStep.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/de/jexp/bricksandmortar/spring/simple_read.spring.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/database" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/database" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/transformation/ListOperationStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/transformation/ListOperationStep.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/output" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/output" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/de/jexp/bricksandmortar/format" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/transaction_test.spring.xml" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/spring/transaction_test.spring.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/format/TextReportStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/TextReportStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/util/RestrictedKeys.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/util/RestrictedKeys.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/results/ListStepResult.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/results/ListStepResult.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/execution" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/execution" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/database/IbatisQueryStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/database/IbatisQueryStep.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/NamedWorkflowStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/NamedWorkflowStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/database/NamedParameterStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/database/NamedParameterStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/database/UpcaseColumnMapRowMapper.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/database/UpcaseColumnMapRowMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/execution/TestStep.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/execution/TestStep.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/de/jexp/bricksandmortar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/WorkflowStepTestUtils.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/WorkflowStepTestUtils.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/spring/simple_read.spring.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/database/SqlStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/database/SqlStep.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/VelocityReportStepTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/de" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/de/jexp/bricksandmortar/spring/test_base.spring.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/execution/ReportWorkflow.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/execution/ReportWorkflow.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/output/LogStepResultWriter.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/output/LogStepResultWriter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/NamedWorkflowStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/NamedWorkflowStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/springframework/jdbc" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/jdbc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/transformation" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/transformation" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/mail/MailSenderStub.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/mail/MailSenderStub.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/mail/SendMailStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/mail/SendMailStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/results/FileStepResult.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/results/FileStepResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/spring/test.config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/spring/test_base.spring.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/results" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/results" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/springframework/jdbc/core/namedparam" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/jdbc/core/namedparam" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/spring" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/springframework/jdbc/core/namedparam/NamedParameterUtils.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/jdbc/core/namedparam/NamedParameterUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BricksAndMortar.iws" afterPath="$PROJECT_DIR$/BricksAndMortar.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/SpringTransactionTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/SpringTransactionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/de/jexp/bricksandmortar/spring" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/test_base.spring.xml" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/spring/test_base.spring.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/execution/Generator.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/execution/Generator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/database" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/database" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/VelocityReportStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/output/WriteFileStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/output/WriteFileStep.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/spring/sql" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/transformation/ListOperationStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/transformation/ListOperationStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/springframework" afterPath="$PROJECT_DIR$/src/main/java/org/springframework" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de" afterPath="$PROJECT_DIR$/src/test/java/de" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/output" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/output" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/WorkflowStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/WorkflowStep.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/de/jexp/bricksandmortar/spring/test.config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/database/SqlTypeUtils.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/database/SqlTypeUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/output/TextFileWriter.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/output/TextFileWriter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/util/RestrictedKeyCollection.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/util/RestrictedKeyCollection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/database/NamedParameterQueryStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/database/NamedParameterQueryStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/mail" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/mail" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/database/NamedParameterUpdateStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/database/NamedParameterUpdateStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/execution" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/execution" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/mail/SendMailStepTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/mail/SendMailStepTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/format" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/database/IbatisStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/database/IbatisStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/StepResultWriter.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/StepResultWriter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/database/InformixDataSource.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/database/InformixDataSource.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/transformation/ListOperation.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/transformation/ListOperation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/database/IbatisUpdateStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/database/IbatisUpdateStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/database/NamedQueryWorkflowTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/database/NamedQueryWorkflowTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/database/NamedParameterQueryStepTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/database/NamedParameterQueryStepTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/util" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/util" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/mail/SendMailStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/mail/SendMailStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/WorkflowContext.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/WorkflowContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/de/jexp/bricksandmortar/spring/sql/test.sql.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/execution/CompoundWorkflowStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/execution/CompoundWorkflowStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/database/IbatisQueryStepTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/database/IbatisQueryStepTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/transformation/ListOperationKeyTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/transformation/ListOperationKeyTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/TextReportStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/TextReportStep.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/StepResult.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/StepResult.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/SimpleSpringTest.java" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/SimpleSpringTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/output/BinaryFileWriter.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/output/BinaryFileWriter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/de/jexp/bricksandmortar/spring/sql/test.sql.xml" afterPath="$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/spring/sql/test.sql.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/jexp/bricksandmortar/output/WriteTextStep.java" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/output/WriteTextStep.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org" afterPath="$PROJECT_DIR$/src/main/java/org" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/XmlReportStep.java" />
     </list>
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
@@ -230,16 +112,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="VelocityReportStepTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/VelocityReportStepTest.java">
+      <file leaf-file-name="XmlReportStep.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/XmlReportStep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.1993007">
+            <state line="81" column="57" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.7368421">
+              <folding>
+                <marker date="1220564452000" expanded="true" signature="48:429" placeholder="..." />
+                <element signature="method#setElements#0;class#XmlReportStep#0" expanded="true" />
+                <element signature="method#setIdentation#0;class#XmlReportStep#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextReportStepTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/TextReportStepTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="24" selection-start="498" selection-end="498" vertical-scroll-proportion="0.16374269">
+              <folding>
+                <marker date="1196236007000" expanded="true" signature="637:1119" placeholder="{...}" />
+                <marker date="1196236007000" expanded="true" signature="1148:1262" placeholder="{...}" />
+                <marker date="1196236007000" expanded="true" signature="1294:1301" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlReportStepTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/XmlReportStepTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="16" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.9005848">
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1220562491000" expanded="true" signature="801:1337" placeholder="{...}" />
-                <marker date="1220562491000" expanded="true" signature="1366:1621" placeholder="{...}" />
-                <marker date="1220562491000" expanded="true" signature="1665:2129" placeholder="{...}" />
-                <marker date="1220562491000" expanded="true" signature="2161:2168" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -248,32 +152,7 @@
       <file leaf-file-name="TextUtils.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/util/TextUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="31" selection-start="207" selection-end="207" vertical-scroll-proportion="0.20272572">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VelocityReportStep.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/VelocityReportStep.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.6678024">
-              <folding>
-                <marker date="1220561800000" expanded="true" signature="427:476" placeholder="/**...*/" />
-                <marker date="1220561800000" expanded="true" signature="673:1016" placeholder="{...}" />
-                <marker date="1220561800000" expanded="true" signature="1095:1477" placeholder="{...}" />
-                <marker date="1220561800000" expanded="true" signature="1529:1570" placeholder="{...}" />
-                <marker date="1220561800000" expanded="false" signature="1643:1696" placeholder="{...}" />
-                <marker date="1220561800000" expanded="true" signature="1730:1762" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.vm" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/de/jexp/bricksandmortar/format/test.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="12" selection-start="59" selection-end="59" vertical-scroll-proportion="0.04770017">
+            <state line="35" column="33" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.31092438">
               <folding />
             </state>
           </provider>
@@ -468,6 +347,54 @@
   </component>
   <component name="ProjectPane">
     <subPane>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="xmlenc:xmlenc:0.52" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar!/org/znerd/xmlenc" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="BricksAndMortar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="xmlenc:xmlenc:0.52" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/mh14/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="BricksAndMortar" />
@@ -721,24 +648,6 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/test" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -1091,24 +1000,6 @@
           <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/src" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/src/main" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -1250,32 +1141,6 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/src/de" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/mh14/java/BricksAndMortar/src/de/jexp" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
     </subPane>
   </component>
   <component name="ProjectReloadState">
@@ -1325,6 +1190,7 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="de.jexp.bricksandmortar.format" />
+      <recent name="de.jexp.bricksandmortar.results" />
       <recent name="de.jexp.bricksandmortar" />
       <recent name="de.jexp.bricksandmortar.transformation" />
       <recent name="de.jexp.BricksAndMortar" />
@@ -1361,16 +1227,16 @@
     <option name="referencePos" value="0" />
     <option name="showLabels" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.VelocityReportStepTest.testTextStep">
-    <tempConfiguration default="false" name="VelocityReportStepTest.testTextStep" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+  <component name="RunManager" selected="JUnit.XmlReportStepTest">
+    <tempConfiguration default="false" name="XmlReportStepTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
       <pattern value="de.jexp.bricksandmortar.format.*" />
       <module name="BricksAndMortar" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="de.jexp.bricksandmortar.format" />
-      <option name="MAIN_CLASS_NAME" value="de.jexp.bricksandmortar.format.VelocityReportStepTest" />
-      <option name="METHOD_NAME" value="testTextStep" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="de.jexp.bricksandmortar.format.XmlReportStepTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1381,13 +1247,7 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="58597" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" value="true" />
@@ -1447,8 +1307,31 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.VelocityReportStepTest.testTextStep" />
+    <configuration default="false" name="XmlReportStepTest.testAttributesStep" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+      <pattern value="de.jexp.bricksandmortar.format.*" />
+      <module name="BricksAndMortar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="de.jexp.bricksandmortar.format" />
+      <option name="MAIN_CLASS_NAME" value="de.jexp.bricksandmortar.format.XmlReportStepTest" />
+      <option name="METHOD_NAME" value="testAttributesStep" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.XmlReportStepTest.testTextStep" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.XmlReportStepTest" />
     </list>
   </component>
   <component name="SQLPlugin.ProjectConfiguration">
@@ -1526,7 +1409,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24834983" order="2" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39873418" order="6" />
       <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36084142" order="2" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36084142" order="2" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Maven Runner Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847896" order="8" />
@@ -1545,15 +1428,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="PERFORM_UPDATE_IN_BACKGROUND" value="false" />
     <option name="PERFORM_COMMIT_IN_BACKGROUND" value="false" />
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="maven directory structure&#10;velocity text step" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="XML Step" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
     <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
     <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
@@ -1563,6 +1446,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="maven directory structure&#10;velocity text step" />
+    <MESSAGE value="XML Step" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1610,41 +1494,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/SpringTransactionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="58" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/execution/WorkflowRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/execution/ReportWorkflowTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="86" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/execution/TestStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="370" selection-end="370" vertical-scroll-proportion="0.19080068">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/execution/ReportWorkflow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="6" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/ExcelReportStep.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="13" selection-start="761" selection-end="761" vertical-scroll-proportion="0.024475524">
@@ -1655,13 +1504,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/NamedWorkflowStep.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="95" column="54" selection-start="2783" selection-end="2783" vertical-scroll-proportion="0.63286716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/TextReportStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="381" selection-end="381" vertical-scroll-proportion="0.17132868">
           <folding />
         </state>
       </provider>
@@ -1688,24 +1530,6 @@
             <marker date="1196236007000" expanded="true" signature="1908:2024" placeholder="{...}" />
             <marker date="1196236007000" expanded="true" signature="2056:2063" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/TextReportStepTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="85" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.44055945">
-          <folding>
-            <marker date="1196236007000" expanded="true" signature="637:1119" placeholder="{...}" />
-            <marker date="1196236007000" expanded="true" signature="1148:1262" placeholder="{...}" />
-            <marker date="1196236007000" expanded="true" signature="1294:1301" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="63" selection-start="957" selection-end="957" vertical-scroll-proportion="0.7205882">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1774,27 +1598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/VelocityReportStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.6678024">
-          <folding>
-            <marker date="1220561800000" expanded="true" signature="427:476" placeholder="/**...*/" />
-            <marker date="1220561800000" expanded="true" signature="673:1016" placeholder="{...}" />
-            <marker date="1220561800000" expanded="true" signature="1095:1477" placeholder="{...}" />
-            <marker date="1220561800000" expanded="true" signature="1529:1570" placeholder="{...}" />
-            <marker date="1220561800000" expanded="false" signature="1643:1696" placeholder="{...}" />
-            <marker date="1220561800000" expanded="true" signature="1730:1762" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/util/TextUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="207" selection-end="207" vertical-scroll-proportion="0.20272572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar!/junit/framework/TestCase.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="913" selection-end="913" vertical-scroll-proportion="0.98039216">
@@ -1811,13 +1614,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/VelocityReportStepTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.1993007">
+        <state line="39" column="40" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.5174825">
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1220562491000" expanded="true" signature="801:1337" placeholder="{...}" />
             <marker date="1220562491000" expanded="true" signature="1366:1621" placeholder="{...}" />
             <marker date="1220562491000" expanded="true" signature="1665:2129" placeholder="{...}" />
             <marker date="1220562491000" expanded="true" signature="2161:2168" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/VelocityReportStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="490" selection-end="490" vertical-scroll-proportion="0.1669506">
+          <folding>
+            <marker date="1220561800000" expanded="true" signature="427:476" placeholder="/**...*/" />
+            <marker date="1220561800000" expanded="true" signature="673:1016" placeholder="{...}" />
+            <marker date="1220561800000" expanded="true" signature="1095:1477" placeholder="{...}" />
+            <marker date="1220561800000" expanded="true" signature="1529:1570" placeholder="{...}" />
+            <marker date="1220561800000" expanded="false" signature="1643:1696" placeholder="{...}" />
+            <marker date="1220561800000" expanded="true" signature="1730:1762" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/results/TextStepResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="20" selection-start="203" selection-end="203" vertical-scroll-proportion="0.1669506">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/results/XmlStepResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="386" selection-end="386" vertical-scroll-proportion="0.28620103">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/TextReportStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="381" selection-end="381" vertical-scroll-proportion="0.17132868">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="117" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.06784661">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/util/TextUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="33" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.31092438">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/TextReportStepTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="24" selection-start="498" selection-end="498" vertical-scroll-proportion="0.16374269">
+          <folding>
+            <marker date="1196236007000" expanded="true" signature="637:1119" placeholder="{...}" />
+            <marker date="1196236007000" expanded="true" signature="1148:1262" placeholder="{...}" />
+            <marker date="1196236007000" expanded="true" signature="1294:1301" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar!/org/znerd/xmlenc/LineBreak.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="160" selection-end="160" vertical-scroll-proportion="0.15686275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/jexp/bricksandmortar/format/XmlReportStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="57" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.7368421">
+          <folding>
+            <marker date="1220564452000" expanded="true" signature="48:429" placeholder="..." />
+            <element signature="method#setElements#0;class#XmlReportStep#0" expanded="true" />
+            <element signature="method#setIdentation#0;class#XmlReportStep#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/jexp/bricksandmortar/format/XmlReportStepTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="16" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.9005848">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

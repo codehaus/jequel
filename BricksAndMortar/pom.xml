@@ -59,9 +59,9 @@
             <version>1.5</version>
         </dependency>
         <dependency>
-            <groupId>com.atomikos</groupId>
-            <artifactId>transactions-jta</artifactId>
-            <version>3.2.3</version>
+            <groupId>xmlenc</groupId>
+            <artifactId>xmlenc</artifactId>
+            <version>0.52</version>
         </dependency>
     </dependencies>
 </project>
